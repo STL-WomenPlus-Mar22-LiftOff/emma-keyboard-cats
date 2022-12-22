@@ -1,0 +1,26 @@
+C:\Users\Kelly\source\repos\Keyboard Cats\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Kelly\source\repos\Keyboard Cats\bin\Debug\net6.0\appsettings.json
+C:\Users\Kelly\source\repos\Keyboard Cats\bin\Debug\net6.0\Keyboard Cats.staticwebassets.runtime.json
+C:\Users\Kelly\source\repos\Keyboard Cats\bin\Debug\net6.0\Keyboard Cats.exe
+C:\Users\Kelly\source\repos\Keyboard Cats\bin\Debug\net6.0\Keyboard Cats.deps.json
+C:\Users\Kelly\source\repos\Keyboard Cats\bin\Debug\net6.0\Keyboard Cats.runtimeconfig.json
+C:\Users\Kelly\source\repos\Keyboard Cats\bin\Debug\net6.0\Keyboard Cats.dll
+C:\Users\Kelly\source\repos\Keyboard Cats\bin\Debug\net6.0\Keyboard Cats.pdb
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\Keyboard Cats.csproj.AssemblyReference.cache
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\Keyboard Cats.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\Keyboard Cats.AssemblyInfoInputs.cache
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\Keyboard Cats.AssemblyInfo.cs
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\Keyboard Cats.csproj.CoreCompileInputs.cache
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\Keyboard Cats.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\Keyboard Cats.RazorAssemblyInfo.cache
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\Keyboard Cats.RazorAssemblyInfo.cs
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\scopedcss\bundle\Keyboard Cats.styles.css
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\scopedcss\projectbundle\Keyboard Cats.bundle.scp.css
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\Keyboard Cats.dll
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\refint\Keyboard Cats.dll
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\Keyboard Cats.pdb
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\Keyboard Cats.genruntimeconfig.cache
+C:\Users\Kelly\source\repos\Keyboard Cats\obj\Debug\net6.0\ref\Keyboard Cats.dll

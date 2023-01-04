@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kelly\\source\\repos\\Keyboard Cats\\Keyboard Cats.csproj": {}
+    "C:\\Users\\Kelly\\Source\\Repos\\emma-keyboard-cats\\Keyboard Cats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kelly\\source\\repos\\Keyboard Cats\\Keyboard Cats.csproj": {
+    "C:\\Users\\Kelly\\Source\\Repos\\emma-keyboard-cats\\Keyboard Cats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kelly\\source\\repos\\Keyboard Cats\\Keyboard Cats.csproj",
+        "projectUniqueName": "C:\\Users\\Kelly\\Source\\Repos\\emma-keyboard-cats\\Keyboard Cats.csproj",
         "projectName": "Keyboard Cats",
-        "projectPath": "C:\\Users\\Kelly\\source\\repos\\Keyboard Cats\\Keyboard Cats.csproj",
+        "projectPath": "C:\\Users\\Kelly\\Source\\Repos\\emma-keyboard-cats\\Keyboard Cats.csproj",
         "packagesPath": "C:\\Users\\Kelly\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kelly\\source\\repos\\Keyboard Cats\\obj\\",
+        "outputPath": "C:\\Users\\Kelly\\Source\\Repos\\emma-keyboard-cats\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kelly\\AppData\\Roaming\\NuGet\\NuGet.Config",

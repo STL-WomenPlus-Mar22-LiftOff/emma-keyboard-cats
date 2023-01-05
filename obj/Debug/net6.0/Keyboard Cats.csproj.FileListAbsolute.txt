@@ -76,3 +76,8 @@ C:\Users\selfa\OneDrive\Desktop\LaunchCode\Liftoff\emma-keyboard-cats\obj\Debug\
 C:\Users\selfa\OneDrive\Desktop\LaunchCode\Liftoff\emma-keyboard-cats\obj\Debug\net6.0\Keyboard Cats.pdb
 C:\Users\selfa\OneDrive\Desktop\LaunchCode\Liftoff\emma-keyboard-cats\obj\Debug\net6.0\Keyboard Cats.genruntimeconfig.cache
 C:\Users\selfa\OneDrive\Desktop\LaunchCode\Liftoff\emma-keyboard-cats\obj\Debug\net6.0\ref\Keyboard Cats.dll
+C:\Users\selfa\OneDrive\Desktop\LaunchCode\Liftoff\emma-keyboard-cats\obj\Debug\net6.0\staticwebassets\msbuild.Keyboard Cats.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\selfa\OneDrive\Desktop\LaunchCode\Liftoff\emma-keyboard-cats\obj\Debug\net6.0\staticwebassets\msbuild.build.Keyboard Cats.props
+C:\Users\selfa\OneDrive\Desktop\LaunchCode\Liftoff\emma-keyboard-cats\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Keyboard Cats.props
+C:\Users\selfa\OneDrive\Desktop\LaunchCode\Liftoff\emma-keyboard-cats\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Keyboard Cats.props
+C:\Users\selfa\OneDrive\Desktop\LaunchCode\Liftoff\emma-keyboard-cats\obj\Debug\net6.0\staticwebassets.pack.json

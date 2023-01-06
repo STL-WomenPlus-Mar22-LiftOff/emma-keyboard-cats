@@ -12,7 +12,7 @@ builder.Services.AddDbContext<Keyboard_CatsContext>(options =>
 builder.Services.AddDefaultIdentity<Keyboard_CatsUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<Keyboard_CatsContext>();
 
-// Add services to the container.
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

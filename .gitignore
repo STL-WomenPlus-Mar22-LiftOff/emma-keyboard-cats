@@ -1,3 +1,10 @@
 ﻿.vs/ 
 bin/
 obj/
+/obj/project.nuget.cache
+/obj/project.assets.json
+/obj/Keyboard Cats.csproj.nuget.g.props
+/obj/Keyboard Cats.csproj.nuget.dgspec.json
+/obj/Debug/net6.0/Keyboard Cats.GeneratedMSBuildEditorConfig.editorconfig
+/obj/Debug/net6.0/Keyboard Cats.csproj.AssemblyReference.cache
+/obj/Debug/net6.0/Keyboard Cats.assets.cache

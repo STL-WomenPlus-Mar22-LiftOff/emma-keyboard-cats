@@ -1,4 +1,16 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Keyboard_Cats.Data;
+using Keyboard_Cats.Areas.Identity.Data;
+
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("Keyboard_CatsContextConnection") ?? throw new InvalidOperationException("Connection string 'Keyboard_CatsContextConnection' not found.");
+
+builder.Services.AddDbContext<Keyboard_CatsContext>(options =>
+    options.UseSqlServer(connectionString));
+
+builder.Services.AddDefaultIdentity<Keyboard_CatsUser>(options => options.SignIn.RequireConfirmedAccount = true)
+    .AddEntityFrameworkStores<Keyboard_CatsContext>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -17,6 +29,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();;
 
 app.UseAuthorization();
 

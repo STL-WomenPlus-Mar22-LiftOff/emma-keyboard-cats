@@ -1,8 +1,43 @@
 {
   "version": 2,
-  "dgSpecHash": "veV+or+Xtb02/aKILv+tRFNzib1JqNj81WHCNv8XYCt7zb4dpWf9MyoDJtwtVPJ477mA8tX+dK9h6z1Q+uqcIw==",
+  "dgSpecHash": "sFEyMMsTxndKzmtElYvLFKLsgi7r0uiDyJpnfh2Nk8JPlohlRRhWF1QBCgG9aIb43PGn3K+KF81cXLHeQC6sbA==",
   "success": true,
   "projectFilePath": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\Keyboard Cats.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
+  "expectedPackageFiles": [
+    "C:\\Users\\selfa\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.1\\microsoft.entityframeworkcore.7.0.1.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.1\\microsoft.entityframeworkcore.abstractions.7.0.1.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.1\\microsoft.entityframeworkcore.analyzers.7.0.1.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.entityframeworkcore.design\\7.0.1\\microsoft.entityframeworkcore.design.7.0.1.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.1\\microsoft.entityframeworkcore.relational.7.0.1.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.extensions.dependencymodel\\7.0.0\\microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\mysqlconnector\\2.1.2\\mysqlconnector.2.1.2.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\6.0.2\\pomelo.entityframeworkcore.mysql.6.0.2.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\selfa\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1608",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package version outside of dependency constraint: Pomelo.EntityFrameworkCore.MySql 6.0.2 requires Microsoft.EntityFrameworkCore.Relational (>= 6.0.7 && < 7.0.0) but version Microsoft.EntityFrameworkCore.Relational 7.0.1 was resolved.",
+      "libraryId": "Microsoft.EntityFrameworkCore.Relational",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

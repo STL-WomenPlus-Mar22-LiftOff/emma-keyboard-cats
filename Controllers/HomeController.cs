@@ -23,6 +23,13 @@ namespace Keyboard_Cats.Controllers
             return View();
         }
 
+        [HttpPost]
+        [Route("/Home/Guest")]
+        public IActionResult Guest()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -51,7 +51,7 @@ namespace Keyboard_Cats.Controllers
                 return View("Add", addUserViewModel);
             }
 
-            return View();
+           
         
     }
 }

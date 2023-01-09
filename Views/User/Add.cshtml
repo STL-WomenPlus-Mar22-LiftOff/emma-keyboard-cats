@@ -26,3 +26,26 @@
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
+<form method="post" action="/user">
+    <div class="form-group">
+        <label asp-for="Username"></label>
+        <input asp-for="Username" />
+        <span asp-validation-for="Username"></span>
+    </div>
+    <div class="form-group" >
+        <label asp-for="Password"></label>
+        <input asp-for="Password" type="password"/>
+        <span asp-validation-for="Password"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="VerifyPassword">Verify Password</label>
+        <input asp-for="VerifyPassword" type="password"/>
+        <span asp-validation-for="VerifyPassword"></span>
+    </div>
+    <div class="form-group">
+   <label asp-for="Email"></label>
+   <input asp-for="Email" />
+   <span asp-validation-for="Email"></span>
+</div>
+<input type="submit" value="addUser" />
+</form>

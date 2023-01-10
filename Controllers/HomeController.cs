@@ -23,8 +23,8 @@ namespace Keyboard_Cats.Controllers
             return View();
         }
 
-        [HttpPost]
-        [Route("/Home/Guest")]
+        
+        [Route("/Guest")]
         public IActionResult Guest()
         {
             return View();

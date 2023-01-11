@@ -8,8 +8,7 @@ namespace Keyboard_Cats.Data;
 
 public class Keyboard_CatsContext : IdentityDbContext<Keyboard_CatsUser>
 {
-    public DbSet<User> Users { get; set; }
-
+    public DbSet<User>Users { get; set; }
     public Keyboard_CatsContext(DbContextOptions<Keyboard_CatsContext> options)
         : base(options)
     {

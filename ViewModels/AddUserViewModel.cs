@@ -4,7 +4,7 @@ namespace Keyboard_Cats.ViewModels
 {
     public class AddUserViewModel
     {
-        [Required(ErrorMessage = "Username is required.")]
+        [Required(ErrorMessage = "User name is required.")]
         [StringLength(15, MinimumLength = 4, ErrorMessage = "User Name must be between 4 and 15 characters.")]
         public string Username { get; set; }
 

@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Views\\Gallery",
+    "\\Views\\Home",
+    "\\Views\\Shared"
   ],
   "SelectedNode": "\\Keyboard Cats.sln",
   "PreviewInSolutionExplorer": false

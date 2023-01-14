@@ -2,8 +2,17 @@
     margin:0px; 
 }
 
+h1{
+    float:left;
+    padding: 9px 0;
+    width: 20% ;
+    font-size: 20px;
+    height: 20%; 
+    
+}
+
 .container{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 header{
@@ -17,11 +26,17 @@ header::after{
 }
 .logo{
     float: left;
-    padding: 10px 0;
+    padding: 9px 56px;
+    height: 100px;
+    width: 25%
+    
+   
+     
 }
 
 nav{
     float:right;
+
 }
 
 nav ul{
@@ -47,7 +62,7 @@ nav a {
 }
 
 nav a:hover{
-    color: mediumpurple;
+    color: snow  ;
 
 
 }
@@ -59,7 +74,7 @@ nav a:hover{
         width: 100%;
         background-image: url('../images/watercolorbg.webp');
 
-        postiion: absolute;
+        position: absolute;
         top: 0;
         width: 0%;
 
@@ -69,4 +84,8 @@ nav a:hover{
 
     nav a:hover::before{
         width:100%;
+    }
+
+    article{
+        padding-top: 10em;
     }

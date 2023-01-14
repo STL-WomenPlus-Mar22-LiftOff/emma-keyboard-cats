@@ -21,7 +21,7 @@ namespace Keyboard_Cats.Controllers
             }
 
             [HttpPost]
-            [Route("/user")]
+            [Route("/Identity/Account/Register")]
             public IActionResult SubmitAddUserForm(AddUserViewModel addUserViewModel)
             {
                 if (ModelState.IsValid)

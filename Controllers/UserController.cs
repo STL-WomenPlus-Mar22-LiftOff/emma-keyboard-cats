@@ -29,14 +29,14 @@ namespace Keyboard_Cats.Controllers
 
                     if (addUserViewModel.Password == addUserViewModel.VerifyPassword)
                     {
-                        User newUser = new User
+                    Areas.Identity.Data.Keyboard_CatsUser newKeyboard_CatsUser = new Areas.Identity.Data.Keyboard_CatsUser
                         {
                             Username = addUserViewModel.Username,
                             Email = addUserViewModel.Email,
                             Password = addUserViewModel.Password,
                         };
 
-                        return View("Index", newUser);
+                        return View("Index", newKeyboard_CatsUser);
                     }
                     else
                     {

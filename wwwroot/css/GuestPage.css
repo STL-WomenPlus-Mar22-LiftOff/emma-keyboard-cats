@@ -16,7 +16,7 @@ h1{
     margin: 0 auto;
 }
 header{
-    background-color: lightblue;
+    background-color: transparent;
 }
 
 header::after{
@@ -61,19 +61,16 @@ nav a {
 
 }
 
-nav a:hover{
-    color: snow  ;
-
-
-}
+    nav a:hover {
+        color: #8e41db;
+    }
 
     nav a::before {
         content: '';
         display: block;
         height: 5px;
         width: 100%;
-        background-image: url('../images/watercolorbg.webp');
-
+        background: #8e41db;
         position: absolute;
         top: 0;
         width: 0%;
@@ -88,4 +85,65 @@ nav a:hover{
 
     article{
         padding-top: 10em;
+        padding-bottom: 10em;
+        border: dotted;
+        float: right;
+        margin-left: 50%
     }
+
+.wrapper {
+    position: absolute;
+    float: left;
+    top: 20%;
+    left:35%;
+    transform: translate(-50%,-50%);
+    margin-right: 50%;
+}
+
+.img-area {
+    height: 300px;
+    width: 540px;
+    position: relative;
+   
+}
+
+.img-box {
+    padding: 10px;
+    z-index: 200;
+    background-color: white;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 0 0 5px black;
+    border: 1 px solid white;
+    transition: .5s;
+    
+}
+
+.img-area:hover .box-1{
+    top: 0;
+    left:0;
+    width: 200px;
+}
+
+.img-area:hover .box-2{
+    top: 0;
+    left: 210px;
+    width: 200px;
+}
+
+.img-area:hover .box-3{
+    top: 45px;
+    left: -140px;
+    width:200px;
+}
+
+.img-area img:nth-child(2){
+    transform:rotate(5deg);
+    zoom:1;
+}
+
+.img-area img:nth-child(3){
+    transform: rotate(-15deg);
+}

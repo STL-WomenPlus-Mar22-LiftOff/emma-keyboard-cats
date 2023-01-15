@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ftqg6zIozwkAR4QOCYP6oo06a8lfEHS41J9CqiNbivo=",
+  "Hash": "h2op3zs3kxPBFU+CqiGbMjyfo3tUuanqFHejuDqxaPU=",
   "Source": "Keyboard Cats",
   "BasePath": "_content/Keyboard Cats",
   "Mode": "Default",
@@ -1139,6 +1139,23 @@
       "OriginalItemSpec": "wwwroot\\images\\cat food bowl.jpg"
     },
     {
+      "Identity": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\wwwroot\\images\\cat small gallery.jpg",
+      "SourceId": "Keyboard Cats",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\wwwroot\\",
+      "BasePath": "_content/Keyboard Cats",
+      "RelativePath": "images/cat small gallery.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\cat small gallery.jpg"
+    },
+    {
       "Identity": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\wwwroot\\images\\cute cat.jpg",
       "SourceId": "Keyboard Cats",
       "SourceType": "Discovered",
@@ -1171,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\keyboard cat!.gif"
+    },
+    {
+      "Identity": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\wwwroot\\images\\kittypic.jpg",
+      "SourceId": "Keyboard Cats",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\wwwroot\\",
+      "BasePath": "_content/Keyboard Cats",
+      "RelativePath": "images/kittypic.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\kittypic.jpg"
     },
     {
       "Identity": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\wwwroot\\images\\moving cat 2.gif",
@@ -1290,6 +1324,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\why cats.webp"
+    },
+    {
+      "Identity": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\wwwroot\\images\\willyouwork.jpg",
+      "SourceId": "Keyboard Cats",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\wwwroot\\",
+      "BasePath": "_content/Keyboard Cats",
+      "RelativePath": "images/willyouwork.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\willyouwork.jpg"
     },
     {
       "Identity": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\wwwroot\\js\\site.js",

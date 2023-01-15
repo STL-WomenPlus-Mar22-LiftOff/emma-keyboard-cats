@@ -111,10 +111,10 @@ nav a {
     padding: 10px;
     z-index: 200;
     background-color: white;
-    width: 300px;
+    width: 400px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: -10%;
     box-shadow: 0 0 5px black;
     border: 1 px solid white;
     transition: .5s;
@@ -146,4 +146,24 @@ nav a {
 
 .img-area img:nth-child(3){
     transform: rotate(-15deg);
+}
+
+.googlemap{
+    width: 30%; 
+ float: left;
+ position:absolute;
+ left: 10%;
+ top: 45%
+
+}
+
+
+.youtube{
+    width: 30%;
+    float:left;
+    position: absolute;
+    left: 10%;
+    top: 75%;
+
+}
 }

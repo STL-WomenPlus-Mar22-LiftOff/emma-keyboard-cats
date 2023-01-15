@@ -2,6 +2,7 @@
 
 @*<h1>KeyBoard Cats</h1>*@
 <header>
+    @*navigation bar to nav thorugh the forms*@
     <div class="container">
 
          <img src="~/images/keyboard cat!.gif" alt="logo" class="logo" />
@@ -18,15 +19,26 @@
     </div>
 </header>
 <body>
+    @*A small gallery to get into the main gallery*@
     <div class="wrapper">
         <div class="img-area">
-           <img src="~/images/cat small gallery.jpg" alt="" class="img-box box-1" />
+            <a asp-controller="Cat Gallery" asp-action="GoTo" target="">
+            <img src="~/images/willyouwork.jpg" alt="" class="img-box box-1" />
             <img src="~/images/kittypic.jpg" alt="" class="img-box box-2" />
-            <img src="~/images/willyouwork.jpg" alt="" class="img-box box-3" />
-          
+            <img src="~/images/cat small gallery.jpg" alt="" class="img-box box-3" />
+            </a>
         </div>
-        <a href="#">Cat Gallery</a>
+        
     </div>
+   
+@*google map for view*@
+<a asp-controller="Vet Finder" asp-action="GoTo" target="">
+    <iframe class="googlemap"src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12468.131128172792!2d-90.1867504!3d38.6251269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x79ed2889c696a834!2sThe%20Gateway%20Arch!5e0!3m2!1sen!2sus!4v1673822029886!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </a>
+    @*youtube video*@
+    
+   <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/romnmHdGH08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    @*articles about cats*@
 <article>
     <h2>The Inner Life of Cats</h2>
     <img src="~/images/why cats.webp" height="340" width="350" draggable="false"/>

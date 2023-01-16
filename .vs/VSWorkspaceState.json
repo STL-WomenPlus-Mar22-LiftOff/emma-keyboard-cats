@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Areas",
+    "\\Areas\\Identity",
+    "\\Areas\\Identity\\Data",
+    "\\Areas\\Identity\\Pages",
+    "\\Controllers"
   ],
   "SelectedNode": "\\Keyboard Cats.sln",
   "PreviewInSolutionExplorer": false

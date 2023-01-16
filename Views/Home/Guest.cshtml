@@ -1,0 +1,66 @@
+﻿<link rel="stylesheet" type="text/css" href="~/css/GuestPage.css" />
+
+@*<h1>KeyBoard Cats</h1>*@
+<header>
+    @*navigation bar to nav thorugh the forms*@
+    <div class="container">
+
+        <img src="~/images/keyboard cat!.gif" alt="logo" class="logo" />
+
+
+        <nav>
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Vet Nearby</a></li>
+                <li><a href="#">Cat Generator</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+    @*A small gallery to get into the main gallery*@
+    <div class="wrapper">
+        <div class="img-area">
+            <a asp-controller="Home" asp-action="CatGallery" target="">
+                <img src="~/images/willyouwork.jpg" alt="" class="img-box box-1" />
+                <img src="~/images/kittypic.jpg" alt="" class="img-box box-2" />
+                <img src="~/images/cat small gallery.jpg" alt="" class="img-box box-3" />
+            </a>
+        </div>
+
+    </div>
+
+    @*google map for view*@
+    <a asp-controller="Vet Finder" asp-action="GoTo" target="">
+        <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12468.131128172792!2d-90.1867504!3d38.6251269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x79ed2889c696a834!2sThe%20Gateway%20Arch!5e0!3m2!1sen!2sus!4v1673822029886!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </a>
+    @*youtube video*@
+
+    <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/romnmHdGH08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    @*articles about cats*@
+    <article>
+        <h2>The Inner Life of Cats</h2>
+        <img src="~/images/why cats.webp" height="340" width="350" draggable="false" />
+        <p>Wanna know why cats behave the way theye do? Here is an article that interviews John Bradshaw who is the author of the book Cat Sense. This articles talks why and how a cat purrs, why they knock objects off of shelves or tables, and why they loves boxs so much. check it out in the link below! </p>
+        <a href="https://www.scientificamerican.com/article/the-inner-life-of-cats/">The Interview</a>
+
+    </article>
+
+    <article>
+        <h2>Wet Vs. Dry Cat Food: Which is Better?</h2>
+        <img src="~/images/cat food bowl.jpg" height="340" width="350" draggable="false" />
+        <p>Are you trying to find the best food for your vat but not sure if wet or dry food is better? Check out this article from Purina tells you the benefits of both and which one might be the better option for your little fur baby. </p>
+        <a href="https://www.purina.com/articles/cat/nutrition/wet-vs-dry-cat-food">Wet Vs. Dry Food</a>
+    </article>
+
+    <article>
+        <h2>Symptom Checker</h2>
+        <img src="~/images/cute cat.jpg" height="340" width="350" draggable="false" />
+        <p>
+            Is your pet acting stranges or showing symptoms but your not sure what? Check out this PetMD that can help you narrow dow nto certain possiblities
+            for your pet to have. They have a symptom checker along with other articles that talks about dealing with certain diseases and disorder.
+        </p>
+        <a href="https://www.petmd.com/symptom-checker">Symptom Checker Site</a>
+    </article>
+</body>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\Keyboard Cats.csproj": {}
+    "C:\\Users\\selfa\\Source\\Repos\\emma-keyboard-cats\\Keyboard Cats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\Keyboard Cats.csproj": {
+    "C:\\Users\\selfa\\Source\\Repos\\emma-keyboard-cats\\Keyboard Cats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\Keyboard Cats.csproj",
+        "projectUniqueName": "C:\\Users\\selfa\\Source\\Repos\\emma-keyboard-cats\\Keyboard Cats.csproj",
         "projectName": "Keyboard Cats",
-        "projectPath": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\Keyboard Cats.csproj",
+        "projectPath": "C:\\Users\\selfa\\Source\\Repos\\emma-keyboard-cats\\Keyboard Cats.csproj",
         "packagesPath": "C:\\Users\\selfa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\obj\\",
+        "outputPath": "C:\\Users\\selfa\\Source\\Repos\\emma-keyboard-cats\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

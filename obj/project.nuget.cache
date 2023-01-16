@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VOgBf6bcpoYDYF9LD4wHf3N21AXPNwpROIfYv8zbrlrpggwEomdjz3/aqVbkA/JKsa2bAfk0Df0vIHxjJCNHqQ==",
+  "dgSpecHash": "9AvliVSEr2hP8M1K5eLZda/vN8/T//7PebSbD0ohAm/KgAoj64qv8tjIktzZAo4tJAPzoQEWs0ZtfaRg1GnyhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\selfa\\OneDrive\\Desktop\\LaunchCode\\Liftoff\\emma-keyboard-cats\\Keyboard Cats.csproj",
+  "projectFilePath": "C:\\Users\\selfa\\Source\\Repos\\emma-keyboard-cats\\Keyboard Cats.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\selfa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\selfa\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",

@@ -1,0 +1,158 @@
+﻿body {
+    margin: 0px;
+}
+
+h1 {
+    float: left;
+    padding: 9px 0;
+    width: 20%;
+    font-size: 20px;
+    height: 20%;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: transparent;
+}
+
+    header::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+.logo {
+    float: left;
+    padding: 9px 56px;
+    height: 100px;
+    width: 25%
+}
+
+nav {
+    float: right;
+}
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-left: 70px;
+        padding-top: 25px;
+        position: relative;
+    }
+
+    nav a {
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+        nav a:hover {
+            color: #8e41db;
+        }
+
+        nav a::before {
+            content: '';
+            display: block;
+            height: 5px;
+            width: 100%;
+            background: #8e41db;
+            position: absolute;
+            top: 0;
+            width: 0%;
+            transition: all ease-in-out 250ms;
+        }
+
+        nav a:hover::before {
+            width: 100%;
+        }
+
+article {
+    padding-top: 10em;
+    padding-bottom: 10em;
+    border: dotted;
+    float: right;
+    margin-left: 50%
+}
+
+.wrapper {
+    position: absolute;
+    float: left;
+    top: 20%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    margin-right: 50%;
+}
+
+.img-area {
+    height: 300px;
+    width: 540px;
+    position: relative;
+}
+
+.img-box {
+    padding: 10px;
+    z-index: 200;
+    background-color: white;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: -10%;
+    box-shadow: 0 0 5px black;
+    border: 1px solid white;
+    transition: .5s;
+}
+
+.img-area:hover .box-1 {
+    top: 0;
+    left: 0;
+    width: 200px;
+}
+
+.img-area:hover .box-2 {
+    top: 0;
+    left: 210px;
+    width: 200px;
+}
+
+.img-area:hover .box-3 {
+    top: 45px;
+    left: -140px;
+    width: 200px;
+}
+
+.img-area img:nth-child(2) {
+    transform: rotate(5deg);
+    zoom: 1;
+}
+
+.img-area img:nth-child(3) {
+    transform: rotate(-15deg);
+}
+
+.googlemap {
+    width: 30%;
+    float: left;
+    position: absolute;
+    left: 10%;
+    top: 45%
+}
+
+
+.youtube {
+    width: 30%;
+    float: left;
+    position: absolute;
+    left: 10%;
+    top: 75%;
+}
+

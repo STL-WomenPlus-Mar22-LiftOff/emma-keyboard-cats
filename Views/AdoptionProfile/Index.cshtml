@@ -11,23 +11,33 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
-    .rounded-5 {
+   /*rounded-5 {
     border-radius: 0.5rem!important;
+    }*/
+    .carousel-inner {
+        margin-top: 0;
+        margin-bottom: 0;
     }
     .carousel {
         position: relative;
     }
-  .pb-4 {
+  /*.pb-4 {
       padding-bottom: 1.5rem!important;
-  }
-  .p-4 {
+  }*/
+  /*.p-4 {
       padding: 1.5rem!important;
-  }
-  .w-100 {
+  }*/
+  /*.w-100 {
       width: 100%!important;
-  }
+  }*/
   section {
       display: block;
+  }
+  .item {
+      object-fit: cover;
+      object-position: center;
+      height: 100vh;
+      overflow: hidden;
   }
  
 </style>
@@ -37,8 +47,8 @@
 <body>
 
   <!-- Carousel   -->
-  <section class="pb-4">
-  <section class="w-100 p-4 pb-4">
+  <section class="carousel-container">
+  <section class="carousel">
   <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
     <!-- Arrows -->
     <ol class="carousel-indicators">
@@ -48,7 +58,7 @@
     </ol>
 
     <!-- Wrapper -->
-    <div class="carousel-inner rounded-5 shadow-4-strong">
+    <div class="carousel-inner">
       <div class="item active">
         <img src="https://paradepets.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkxMzY1Nzg4Njc0NzYyMzM4/black-cat-breeds-jpg.jpg" class="d-block w-100" alt="Black cat">
       </div>
@@ -108,7 +118,7 @@
           <a href="#">123456789</a>
         </div>
       </div>
-
+      </div>
     </div>
   </div>
   </div>

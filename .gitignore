@@ -2,3 +2,5 @@
 bin/
 obj/
 /bin/Debug/net6.0/Keyboard Cats.dll
+/obj/Debug/net6.0/project.razor.vs.json
+/obj/Debug/net6.0/Keyboard Cats.GeneratedMSBuildEditorConfig.editorconfig

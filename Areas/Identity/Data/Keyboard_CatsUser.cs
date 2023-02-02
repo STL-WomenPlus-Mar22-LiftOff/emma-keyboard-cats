@@ -13,3 +13,4 @@ public class Keyboard_CatsUser : IdentityUser
    //public string Password { get; set; }
 }
 
+// properties I need to add go here.

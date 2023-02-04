@@ -1,6 +1,7 @@
 ﻿.vs/ 
 bin/
 obj/
+<<<<<<< HEAD
 /obj/project.nuget.cache
 /obj/project.assets.json
 /obj/Keyboard Cats.csproj.nuget.g.props
@@ -8,3 +9,22 @@ obj/
 /obj/Debug/net6.0/Keyboard Cats.GeneratedMSBuildEditorConfig.editorconfig
 /obj/Debug/net6.0/Keyboard Cats.csproj.AssemblyReference.cache
 /obj/Debug/net6.0/Keyboard Cats.assets.cache
+=======
+/bin/Debug/net6.0/Keyboard Cats.dll
+/obj/Debug/net6.0/project.razor.vs.json
+/obj/Debug/net6.0/Keyboard Cats.GeneratedMSBuildEditorConfig.editorconfig
+/bin/Debug/net6.0/Keyboard Cats.deps.json
+/bin/Debug/net6.0/Keyboard Cats.exe
+/bin/Debug/net6.0/Keyboard Cats.staticwebassets.runtime.json
+/bin/Debug/net6.0/Keyboard Cats.pdb
+/bin/Debug/net6.0/Keyboard Cats.dll
+/obj/Debug/net6.0/ref/Keyboard Cats.dll
+/obj/Debug/net6.0/refint/Keyboard Cats.dll
+/obj/Debug/net6.0/Keyboard Cats.csproj.CoreCompileInputs.cache
+/obj/Debug/net6.0/Keyboard Cats.dll
+/obj/Debug/net6.0/Keyboard Cats.genruntimeconfig.cache
+/obj/Debug/net6.0/Keyboard Cats.csproj.FileListAbsolute.txt
+/obj/Debug/net6.0/Keyboard Cats.pdb
+/obj/Debug/net6.0/staticwebassets.build.json
+/obj/Debug/net6.0/staticwebassets.development.json
+>>>>>>> API-Take-1

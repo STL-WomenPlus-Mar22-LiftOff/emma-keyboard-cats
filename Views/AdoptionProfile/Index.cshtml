@@ -11,6 +11,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
+
 <body>
 <style>
       * {
@@ -22,10 +23,6 @@
         display: block;
         margin-top: 0px;
         margin-bottom: 0px;
-        /*padding-top: 50px;
-        min-height: 100vh;
-        max-height: fit-content;*/
-        
       }
       .carousel-container {
         display: flex;
@@ -33,7 +30,6 @@
         align-items: center;
         margin-top: 0px;
         margin-bottom: 0px;
-        /*height: 50vh;*/
         width: 100%;
       }
 
@@ -43,28 +39,18 @@
         max-height: fit-content;
         margin-top: 0px;
         margin-bottom: 0px;
-        /*width: 100px;*/
-        /*border-radius: 100px;*/
-        /*box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.35);*/
         position: relative;
-        
-      }
-
-      .carousel-indicators {
-        opacity: 0.75;
       }
 
       .carousel-inner {
         display: flex;
         overflow: hidden;
         max-height: fit-content;
-        /*border-radius: 11px;*/
+        display: flex;
       }
 
       .carousel-image {
-        /*transition: all 0.9s;*/
-        width: 500px;
-        /*transform: translateX(0);*/
+        width: 700px;
       }
 
       .btn-left,
@@ -75,69 +61,58 @@
         background-color: white;
         border: none;
         position: absolute;
-        cursor: pointer;
+        top: 50%;
         opacity: 0.75;
-        transition: all 0.25s;
-        z-index: 1;
-      }
-
-      .btn-left:hover,
-      .btn-right:hover {
-        opacity: 1;
       }
 
       .btn-left {
-        top: 50%;
         left: -2rem;
-        transform: translateY(-50%);
       }
       .btn-right {
-        top: 50%;
         right: -2rem;
-        transform: translateY(-50%);
       }
     </style>
 
-    <!-- Carousel   -->
-    <section class="carousel-container">
-      <div class="carousel">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-          <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
+ <!-- Carousel   -->
+  <section class="carousel-container">
+  <div class="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
 
-          <!-- Wrapper -->
-          <div class="carousel-inner">
-            <div class="item active">
+    <!-- Wrapper -->
+    <div class="carousel-inner">
+      <div class="item active">
               <img
                 class="carousel-image"
                 src="https://paradepets.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkxMzY1Nzg4Njc0NzYyMzM4/black-cat-breeds-jpg.jpg"
                 alt="Black cat"
               />
-            </div>
+      </div>
 
-            <div class="item">
+      <div class="item">
               <img
                 class="carousel-image"
                 src="https://www.vets4pets.com/siteassets/species/cat/close-up-of-cat-outside.jpg?width=1040"
                 alt="Tabby cat"
               />
-            </div>
+      </div>
 
-            <div class="item">
+      <div class="item">
               <img
                 class="carousel-image"
                 src="https://www.thesprucepets.com/thmb/ymyFGKeOrvrxylCFLZuXe0VTohE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/smartest-cat-breeds-4589754-hero-e192f849d9f1442481c47c932cd36aa8.jpg"
                 alt="Grey cat"
               />
-            </div>
-          </div>
+      </div>
+    </div>
 
-          <!-- Left and right controls -->
-          <button class="carousel-btn btn-left" href="#myCarousel" data-slide="previous">
+    <!-- Left and right controls -->
+<button class="carousel-btn btn-left" href="#myCarousel" data-slide="previous">
             <i class="glyphicon glyphicon-chevron-left"></i>
           </button>
           <button class="carousel-btn btn-right" id="next">
@@ -183,7 +158,7 @@
           <!-- Rescue Info -->
           <div class="well well-sm">
             <address>
-              <h5 class="text-center"><strong>Rescue/Organization</strong></h5>
+              <strong>Rescue/Organization</strong>
               <br />
               <span class="glyphicon glyphicon-map-marker"></span>
               <a href="#">Address[Google Maps]</a>

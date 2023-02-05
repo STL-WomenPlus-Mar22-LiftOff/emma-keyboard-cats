@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\katem\\OneDrive\\Desktop\\LiftOff\\createaccount\\Keyboard Cats.csproj": {}
+    "C:\\Users\\Brittany\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\katem\\OneDrive\\Desktop\\LiftOff\\createaccount\\Keyboard Cats.csproj": {
+    "C:\\Users\\Brittany\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\katem\\OneDrive\\Desktop\\LiftOff\\createaccount\\Keyboard Cats.csproj",
+        "projectUniqueName": "C:\\Users\\Brittany\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj",
         "projectName": "Keyboard Cats",
-        "projectPath": "C:\\Users\\katem\\OneDrive\\Desktop\\LiftOff\\createaccount\\Keyboard Cats.csproj",
-        "packagesPath": "C:\\Users\\katem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\katem\\OneDrive\\Desktop\\LiftOff\\createaccount\\obj\\",
+        "projectPath": "C:\\Users\\Brittany\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj",
+        "packagesPath": "C:\\Users\\Brittany\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Brittany\\source\\repos\\emma-keyboard-cats\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\katem\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Brittany\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -94,7 +94,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

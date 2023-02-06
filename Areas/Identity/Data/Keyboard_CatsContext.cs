@@ -1,9 +1,8 @@
-﻿using Keyboard_Cats.Areas.Identity.Data;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 
-namespace Keyboard_Cats.Data;
+namespace Keyboard_Cats.Areas.Data;
 
 public class Keyboard_CatsContext : IdentityDbContext<Keyboard_CatsUser>
 {

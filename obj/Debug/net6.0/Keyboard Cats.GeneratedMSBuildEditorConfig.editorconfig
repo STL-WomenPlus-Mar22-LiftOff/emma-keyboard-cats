@@ -176,10 +176,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/katem/OneDrive/Desktop/LiftOff/Monday/Views/AdoptionProfile/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvcHRpb25Qcm9maWxlXEluZGV4LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/katem/OneDrive/Desktop/LiftOff/Monday/Views/Home/CatGallery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDYXRHYWxsZXJ5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -194,10 +190,6 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/katem/OneDrive/Desktop/LiftOff/Monday/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/katem/OneDrive/Desktop/LiftOff/Monday/Views/Home/UserProfile.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/katem/OneDrive/Desktop/LiftOff/Monday/Views/Shared/Error.cshtml]

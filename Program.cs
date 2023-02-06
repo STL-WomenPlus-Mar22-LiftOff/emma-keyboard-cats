@@ -8,7 +8,7 @@ var connectionString = builder.Configuration.GetConnectionString("Keyboard_CatsC
 builder.Services.AddDbContext<Keyboard_CatsContext>(options =>
     options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<Keyboard_CatsUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<Keyboard_CatsUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<Keyboard_CatsContext>();
 
 // Add services to the container.

@@ -72,11 +72,16 @@ namespace Keyboard_Cats.Areas.Identity.Pages.Account
         public class InputModel
         {
            
-            // [Required]
-            // [DataType(DataType.Text)]
-            // [Display(Name = "First Name")] 
-            // public string FirstName { get; set; }
-            
+            [Required]
+            [DataType(DataType.Text)]
+            [Display(Name = "First Name")] 
+            public string FirstName { get; set; }
+
+            [Required]
+            [DataType(DataType.Text)]
+            [Display(Name = "Last Name")]
+            public string LastName { get; set; }
+
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
@@ -118,8 +123,10 @@ namespace Keyboard_Cats.Areas.Identity.Pages.Account
                 // var user = CreateUser(); <got rid of this for the following lines
                 var user = new Keyboard_CatsUser
                 {
+                    FirstName = Input.FirstName,
+                    LastName = Input.LastName,
                     UserName = Input.Email,
-                    Email = Input.Email,
+                    Email = Input.Email
                 };
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);

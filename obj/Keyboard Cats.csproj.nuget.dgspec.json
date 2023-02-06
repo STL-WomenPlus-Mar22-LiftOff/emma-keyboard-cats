@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Brittany\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj": {}
+    "C:\\Users\\katem\\OneDrive\\Desktop\\LiftOff\\user account page\\Keyboard Cats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Brittany\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj": {
+    "C:\\Users\\katem\\OneDrive\\Desktop\\LiftOff\\user account page\\Keyboard Cats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Brittany\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj",
+        "projectUniqueName": "C:\\Users\\katem\\OneDrive\\Desktop\\LiftOff\\user account page\\Keyboard Cats.csproj",
         "projectName": "Keyboard Cats",
-        "projectPath": "C:\\Users\\Brittany\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj",
-        "packagesPath": "C:\\Users\\Brittany\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Brittany\\source\\repos\\emma-keyboard-cats\\obj\\",
+        "projectPath": "C:\\Users\\katem\\OneDrive\\Desktop\\LiftOff\\user account page\\Keyboard Cats.csproj",
+        "packagesPath": "C:\\Users\\katem\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\katem\\OneDrive\\Desktop\\LiftOff\\user account page\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Brittany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\katem\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.12, )"
@@ -73,6 +77,10 @@
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",
               "version": "[6.0.2, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
             }
           },
           "imports": [
@@ -94,7 +102,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

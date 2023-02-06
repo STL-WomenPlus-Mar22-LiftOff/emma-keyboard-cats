@@ -60,10 +60,15 @@ namespace Keyboard_Cats.Areas.Identity.Pages.Account.Manage
             [Display(Name = "Phone number")]
             public string PhoneNumber { get; set; }
             // this is where you would add something like first name last name 
-            //[Required]
-            //[DataType(DataType.Text)]
-            //[Display(Name = "First Name")]
-            //public string FirstName { get; set; }
+            [Required]
+            [DataType(DataType.Text)]
+            [Display(Name = "First Name")]
+            public string FirstName { get; set; }
+
+            [Required]
+            [DataType(DataType.Text)]
+            [Display(Name = "Last Name")]
+            public string LastName { get; set; }
         }
 
         private async Task LoadAsync(Keyboard_CatsUser user)
@@ -75,8 +80,9 @@ namespace Keyboard_Cats.Areas.Identity.Pages.Account.Manage
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber // add comma to this line if adding more inputs
-                // FirstName = user.FirstName
+                PhoneNumber = phoneNumber, // add comma to this line if adding more inputs
+                FirstName = user.FirstName,
+                LastName = user.LastName,
             };
         }
 
@@ -116,10 +122,14 @@ namespace Keyboard_Cats.Areas.Identity.Pages.Account.Manage
                     return RedirectToPage();
                 }
             }
-            //if (Input.FirstName != user.FirstName) 
-            //{
-            //    user.FirstName = Input.FirstName;
-            //}
+            if (Input.FirstName != user.FirstName) 
+            {
+               user.FirstName = Input.FirstName;
+            }
+            if (Input.FirstName != user.FirstName)
+            {
+                user.FirstName = Input.FirstName;
+            }
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";
             return RedirectToPage();

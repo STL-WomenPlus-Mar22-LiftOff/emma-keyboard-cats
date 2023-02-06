@@ -1,0 +1,167 @@
+﻿@{
+    ViewData["Title"] = "KeyBoard Cat";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Adoption Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      section {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: 100%;
+      }
+
+      .carousel {
+        display: flex;
+        align-items: center;
+        max-height: fit-content;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative;
+      }
+
+      .carousel-inner {
+        overflow: hidden;
+        max-height: fit-content;
+        display: flex;
+      }
+
+      .carousel-image {
+        width: 700px;
+      }
+
+      .btn-left,
+      .btn-right {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-color: white;
+        border: none;
+        position: absolute;
+        top: 50%;
+        opacity: 0.75;
+      }
+
+      .btn-left {
+        left: -2rem;
+      }
+      .btn-right {
+        right: -2rem;
+      }
+    </style>
+
+ <!-- Carousel   -->
+  <section class="carousel-container">
+  <div class="carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img class="carousel-image" src="https://paradepets.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTkxMzY1Nzg4Njc0NzYyMzM4/black-cat-breeds-jpg.jpg" alt="Black cat">
+      </div>
+
+      <div class="item">
+        <img class="carousel-image" src="https://www.vets4pets.com/siteassets/species/cat/close-up-of-cat-outside.jpg?width=1040" alt="Tabby cat">
+      </div>
+
+      <div class="item">
+        <img class="carousel-image" src="https://www.thesprucepets.com/thmb/ymyFGKeOrvrxylCFLZuXe0VTohE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/smartest-cat-breeds-4589754-hero-e192f849d9f1442481c47c932cd36aa8.jpg" alt="Grey cat">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+<button class="carousel-btn btn-left" href="#myCarousel" data-slide="previous">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+          </button>
+          <button class="carousel-btn btn-right" id="next">
+            <i class="glyphicon glyphicon-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Bio -->
+    <div id="cat-bio" class="container text-center">
+      <h3>Cat Name</h3>
+      <p><em>Age | Gender | Breed</em></p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.
+      </p>
+      <br />
+      <!-- Health stats -->
+      <div class="row">
+        <div class="col-sm-8">
+          <div class="well well-lg">
+            <h3 class="text-center"><strong>HEALTH / STATS?</strong></h3>
+            <p>
+              Ex: Vaccinations up to date, gets along with other animals, etc.
+            </p>
+            <span class="label label-info">Maybe labels</span>
+          </div>
+        </div>
+        <!-- Button -->
+        <div class="col-sm-4">
+          <a href="#" class="btn btn-info btn-lg">
+            <span class="glyphicon glyphicon-heart-empty"></span> Favorite
+          </a>
+          <!-- Rescue Info -->
+          <div class="well well-sm">
+            <address>
+              <strong>Rescue/Organization</strong>
+              <br />
+              <span class="glyphicon glyphicon-map-marker"></span>
+              <a href="#">Address[Google Maps]</a>
+              <br />
+              <span class="glyphicon glyphicon-envelope"></span>
+              <a href="mailto:#">rescue@email.com</a>
+              <br />
+              <span class="glyphicon glyphicon-earphone"></span>
+              <a href="#">123456789</a>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+ <ul class="pager">
+  <li class="previous"><a href="#">Previous</a></li>
+  <li class="next"><a href="#">Next</a></li>
+</ul> 
+</html>

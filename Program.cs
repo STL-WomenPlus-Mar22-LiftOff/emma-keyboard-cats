@@ -9,6 +9,10 @@ var connectionString = builder.Configuration.GetConnectionString("Keyboard_CatsC
 builder.Services.AddDbContext<Keyboard_CatsContext>(options =>
     options.UseSqlServer(connectionString));
 
+//services builder for multiple roles.
+/*builder.Services.AddIdentity<Keyboard_CatsUser, IdentityRole>().AddEntityFrameworkStores<Keyboard_CatsContext>().AddDefaultTokenProviders();*/
+
+//initial services builder
 builder.Services.AddDefaultIdentity<Keyboard_CatsUser>(options => options.SignIn.RequireConfirmedAccount = true)
     .AddEntityFrameworkStores<Keyboard_CatsContext>();
 

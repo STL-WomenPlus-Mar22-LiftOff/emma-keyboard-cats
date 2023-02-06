@@ -1,4 +1,5 @@
 ﻿using Keyboard_Cats.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -15,7 +16,7 @@ namespace Keyboard_Cats.Controllers
 
         public IActionResult Index()
         {
-            return View();
+                return View();
         }
 
         public IActionResult Privacy()

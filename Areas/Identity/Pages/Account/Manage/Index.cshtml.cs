@@ -56,22 +56,37 @@ namespace Keyboard_Cats.Areas.Identity.Pages.Account.Manage
             ///     This API supports the ASP.NET Core Identity default UI infrastructure and is not intended to be used
             ///     directly from your code. This API may change or be removed in future releases.
             /// </summary>
+            [Display(Name = "Zip code")]
+            public int Zip { get; set; }
+            [Display(Name = "Address")]
+            public string? Address { get; set; }
+            [Display(Name = "First Name")]
+            public string? FirstName { get; set; }
+            [Display(Name = "Last Name")]
+            public string? LastName { get; set; }
             [Phone]
             [Display(Name = "Phone number")]
-            public string PhoneNumber { get; set; }
-
+            public string? PhoneNumber { get; set; }
+         
         }
 
         private async Task LoadAsync(Keyboard_CatsUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
             var phoneNumber = await _userManager.GetPhoneNumberAsync(user);
-
+            
             Username = userName;
 
             Input = new InputModel
             {
-                PhoneNumber = phoneNumber
+                PhoneNumber = phoneNumber,
+                Zip = user.zip,
+                Address = user.address,
+                FirstName = user.firstName,
+                LastName = user.lastName
+
+
+
             };
         }
 
@@ -111,7 +126,23 @@ namespace Keyboard_Cats.Areas.Identity.Pages.Account.Manage
                     return RedirectToPage();
                 }
             }
-
+            if (Input.FirstName!= user.firstName)
+            {
+                user.firstName = Input.FirstName;
+            }
+            if (Input.LastName!= user.lastName)
+            {
+                user.lastName= Input.LastName;
+            }
+            if (Input.Address!= user.address)
+            {
+                user.address = Input.Address;
+            }
+            if (Input.Zip != user.zip)
+            {
+                user.zip = Input.Zip;
+            }
+            await _userManager.UpdateAsync(user);
             await _signInManager.RefreshSignInAsync(user);
             StatusMessage = "Your profile has been updated";
             return RedirectToPage();

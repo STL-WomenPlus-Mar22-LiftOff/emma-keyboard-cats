@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿/*using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Keyboard_Cats.Areas.Identity.Data;
 
@@ -44,4 +44,4 @@ namespace Keyboard_Cats.Areas.Identity.Data
             return View(user);
         }
     }
-}
+}*/

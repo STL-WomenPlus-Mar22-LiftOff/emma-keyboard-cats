@@ -98,6 +98,24 @@ namespace Keyboard_Cats.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            
+            [DataType(DataType.Text)]
+            [Display(Name = "First Name")]
+            public string? firstName { get; set; }
+
+            
+            [DataType(DataType.Text)]
+            [Display(Name ="Last Name")]
+            public string? lastName { get; set; }
+
+            
+            [Display(Name = "Address")]
+            public string? address { get; set; }
+
+            [Required]
+            [Display(Name ="Zipcode")]
+            public int zip { get; set; }
         }
 
 
@@ -114,6 +132,11 @@ namespace Keyboard_Cats.Areas.Identity.Pages.Account
             if (ModelState.IsValid)
             {
                 var user = CreateUser();
+
+                user.firstName = Input.firstName;
+                user.lastName = Input.lastName;
+                user.address = Input.address;
+                user.zip = Input.zip;
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);

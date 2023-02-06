@@ -14,17 +14,13 @@ public class Keyboard_CatsUser : IdentityUser
 {  /* public string Username { get; set; }*/
     //public string Email { get; set; }
     //public string Password { get; set; }
-    
-}
-public class User
-{
-    public string Username { get; set; }
-    public string Email { get; set; }
-    public string Password { get; set; }
+    [PersonalData]
     public string? firstName { get; set; }
     public string? lastName { get; set; }
     [Required]
-    public int Zipcode { get; set; }
-    public string? Address { get; set; }
+    public int zip { get; set; }
+    public string? address { get; set; }
+
 }
+
 

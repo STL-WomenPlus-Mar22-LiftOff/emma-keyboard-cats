@@ -13,7 +13,6 @@ builder.Services.AddDefaultIdentity<Keyboard_CatsUser>(options => options.SignIn
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddRazorPages();
 
 var app = builder.Build();
 

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saran\\Desktop\\LC2022C#\\Keyboard Cats\\Keyboard Cats.csproj": {}
+    "C:\\Users\\selfa\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj": {}
   },
   "projects": {
-    "C:\\Users\\saran\\Desktop\\LC2022C#\\Keyboard Cats\\Keyboard Cats.csproj": {
+    "C:\\Users\\selfa\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saran\\Desktop\\LC2022C#\\Keyboard Cats\\Keyboard Cats.csproj",
+        "projectUniqueName": "C:\\Users\\selfa\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj",
         "projectName": "Keyboard Cats",
-        "projectPath": "C:\\Users\\saran\\Desktop\\LC2022C#\\Keyboard Cats\\Keyboard Cats.csproj",
-        "packagesPath": "C:\\Users\\saran\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saran\\Desktop\\LC2022C#\\Keyboard Cats\\obj\\",
+        "projectPath": "C:\\Users\\selfa\\source\\repos\\emma-keyboard-cats\\Keyboard Cats.csproj",
+        "packagesPath": "C:\\Users\\selfa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\selfa\\source\\repos\\emma-keyboard-cats\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\saran\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\selfa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -107,7 +107,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

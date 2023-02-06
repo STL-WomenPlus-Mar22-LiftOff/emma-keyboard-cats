@@ -1,7 +1,15 @@
 ﻿using Keyboard_Cats.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.DotNet.MSIdentity.Shared;
 using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using NuGet.Protocol;
+using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Diagnostics;
+using System.Net.Http.Headers;
+using System.Runtime.Serialization.Json;
 
 namespace Keyboard_Cats.Controllers
 {
@@ -9,11 +17,17 @@ namespace Keyboard_Cats.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IConfiguration _config;
+
+
+        public HomeController(ILogger<HomeController> logger , IConfiguration config)
         {
             _logger = logger;
+            _config = config;
         }
 
+  
+          
         public IActionResult Index()
         {
             return View();
@@ -32,24 +46,65 @@ namespace Keyboard_Cats.Controllers
         }
 
         [Route("/CatGallery")]
-        public async IAsyncEnumerable<T> CatGallery()
+        
+        public async Task<IActionResult> CatGallery(string CatResponse)
+        { 
+            //HttpClient should be instantiated once and not be disposed 
+            HttpClient client = new HttpClient();
+
+            // Api credientials 
+            var values = new Dictionary<string, string>
         {
-            string Baseurl = "api.petfinder.com/v2";
-            List<Cat> catInfo = new List<Cat>();
+            { "grant_type", "client_credentials" },
+            { "client_id", _config["PetFinder:ApiKey"] },
+            { "client_secret", _config["PetFinder:Secret"] }
+            
+        };
 
-            var httpClient = new HttpClient();
-            httpClient.BaseAddress = new Uri(Baseurl);
-            httpClient.DefaultRequestHeaders.Clear();
-            HttpResponseMessage Res = await httpClient.GetAsync("animals?type=cat?location=62208");
-            if (Res.IsSuccessStatusCode)
+            // FormUrlEncodedContent transforms values to UTF encoding to be read by the server
+            var content = new FormUrlEncodedContent(values);
+
+            // AuthResponse gets information about the accepted OAuth connection
+            AuthResponse authInfo = new AuthResponse();
+
+            //POST the object to the specified URI 
+
+            var response = await client.PostAsync("https://api.petfinder.com/v2/oauth2/token", content);
+
+            if (response.IsSuccessStatusCode)
             {
-                var CatResponse = Res.Content.ReadAsStringAsync().Result;
-                catInfo = JsonConvert.DeserializeObject<List<Cat>>(CatResponse);
+                // responseString holds bearer key information
+                var responseString = await response.Content.ReadAsStringAsync();
+                // Converting bearer key information into AuthResponse objects
+                authInfo = JsonConvert.DeserializeObject<AuthResponse>(responseString);
+                Console.WriteLine("Success");
             }
+            
+                List<Cat> catInfo = new List<Cat>();
 
-            Console.WriteLine(catInfo);
-    
-            return View();
+             
+                client.DefaultRequestHeaders.Clear();
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authInfo.access_token);
+
+
+           
+               HttpResponseMessage Res = await client.GetAsync("https://api.petfinder.com/v2/animals?type=cat");
+                if (Res.IsSuccessStatusCode)
+                {
+
+                
+                _ = Res.Content.ReadAsStringAsync().Result;
+             
+                   
+                    Console.WriteLine("Success");
+
+                } 
+                Console.WriteLine(catInfo); 
+
+
+       
+
+            return View(catInfo);
         }
 
             [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -1,9 +1,8 @@
-﻿@using Keyboard_Cats.Areas.Data;
-@using Microsoft.AspNetCore.Identity
-@using Keyboard_Cats.Areas.Identity
+﻿@using Microsoft.AspNetCore.Identity
+@using Keyboard_Cats.Areas.Identity.Data
 
-@inject SignInManager<Keyboard_CatsUser> SignInManager
-@inject UserManager<Keyboard_CatsUser> UserManager
+@inject             SignInManager<Keyboard_Cats.Areas.Identity.Data.Keyboard_CatsUser> SignInManager
+@inject             UserManager<Keyboard_Cats.Areas.Identity.Data.Keyboard_CatsUser> UserManager
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))

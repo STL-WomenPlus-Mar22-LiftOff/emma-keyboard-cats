@@ -10,10 +10,12 @@
 
         <nav>
             <ul>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Vet Nearby</a></li>
-                <li><a href="#">Cat Generator</a></li>
-                <li><a href="#">Home</a></li>
+                <a asp-asp-controller="Home" asp-action="Index">
+                <li><a href="#">Login</a></li> </a>
+                <a asp-asp-controller="Home" asp-action="CatGallery">
+                <li><a href="#">Cat Gallery</a></li> </a>
+               <a asp-asp-controller="Home" asp-action="Guest">
+                <li><a href="#">Home</a></li> </a>
             </ul>
         </nav>
     </div>

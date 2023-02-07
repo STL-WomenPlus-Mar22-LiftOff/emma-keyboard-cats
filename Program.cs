@@ -20,7 +20,7 @@ builder.Services.AddDefaultIdentity<Keyboard_CatsUser>(options => options.SignIn
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddRazorPages();
 builder.Services.AddHttpClient();
 
 var app = builder.Build();

@@ -18,3 +18,29 @@ obj/
 /obj/Debug/net6.0/Keyboard Cats.pdb
 /obj/Debug/net6.0/staticwebassets.build.json
 /obj/Debug/net6.0/staticwebassets.development.json
+/obj/Debug/net6.0/Keyboard Cats.dll
+/obj/Debug/net6.0/Keyboard Cats.GeneratedMSBuildEditorConfig.editorconfig
+/obj/Debug/net6.0/Keyboard Cats.genruntimeconfig.cache
+/obj/Debug/net6.0/Keyboard Cats.pdb
+/obj/Debug/net6.0/project.razor.vs.json
+/bin/Debug/net6.0/Keyboard Cats.dll
+/bin/Debug/net6.0/Keyboard Cats.exe
+/bin/Debug/net6.0/Keyboard Cats.pdb
+/bin/Debug/net6.0/Keyboard Cats.staticwebassets.runtime.json
+/obj/Debug/net6.0/ref/Keyboard Cats.dll
+/obj/Debug/net6.0/refint/Keyboard Cats.dll
+/obj/Keyboard Cats.csproj.nuget.dgspec.json
+/obj/Keyboard Cats.csproj.nuget.g.props
+/obj/project.assets.json
+/obj/Debug/net6.0/apphost.exe
+/obj/Debug/net6.0/Keyboard Cats.assets.cache
+/obj/Debug/net6.0/Keyboard Cats.csproj.AssemblyReference.cache
+/.vs/Keyboard Cats/v17/.suo
+/.vs/Keyboard Cats/config/applicationhost.config
+/obj/Debug/net6.0/Keyboard Cats.csproj.CoreCompileInputs.cache
+/obj/Debug/net6.0/Keyboard Cats.csproj.FileListAbsolute.txt
+/obj/Debug/net6.0/staticwebassets.build.json
+/obj/Debug/net6.0/staticwebassets.development.json
+/obj/project.nuget.cache
+/.vs/Keyboard Cats/DesignTimeBuild/.dtbcache.v2
+/.gitignore

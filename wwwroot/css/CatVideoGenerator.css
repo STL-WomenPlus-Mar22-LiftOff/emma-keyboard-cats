@@ -1,0 +1,49 @@
+﻿
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: url('../images/watercolorbg.webp');
+    font-family: 'Baskerville Old Face'
+}
+
+img {
+    background-color: transparent;
+}
+
+div {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 120px;
+    line-height: 20px;
+}
+
+button {
+    color: mediumpurple;
+    background: transparent;
+    border: double;
+    font-size: 45px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+
+h1 {
+    color: rebeccapurple;
+    font-size: 50px;
+    border: solid;
+    padding-top: 10px;
+    line-height: 150px;
+}

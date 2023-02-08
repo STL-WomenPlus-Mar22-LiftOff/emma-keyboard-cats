@@ -1,25 +1,27 @@
 ﻿<link rel="stylesheet" type="text/css" href="~/css/CatVideoGenerator.css"/>
 @{
-    ViewData["Title"] = "CatVideoGenerator";
+    ViewData["Title"] = "Cat Video Generator";
 }
 
-<h1>CatVideoGenerator</h1>
+<h1>Cat Video Generator</h1>
 
 <body>
+
+
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLcyn_Vvky1CmJ0Mk-N8uEFnA-XD62NdZa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
+
     <div class="text-center">
-    <h1>Welcome to Keyboard Cats</h1>
-
-
     <p><form action="/Identity/Account/Login"><button type="submit">Log In</button></form></p>
     <p><form action="/Identity/Account/Register"><button type="submit">Register</button></form></p>
-
-    <p><a href="">Forgot Password?</a></p>
-    <p><a href="">Privacy</a></p>
-
-
     <p> <a asp-controller="Home" asp-action="Guest">Continue as Guest </a></p>
-
+    <p><a href="">Privacy</a></p>
+  
     <img src="~/images/moving-cat-3.gif" />
-</div>
+    </div>
 
 </body>

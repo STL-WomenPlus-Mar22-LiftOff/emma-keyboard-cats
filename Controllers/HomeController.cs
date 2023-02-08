@@ -45,6 +45,11 @@ namespace Keyboard_Cats.Controllers
         {
             return View();
         }
+        [Route("/CatVideoGenerator")]
+        public IActionResult CatVideoGenerator()
+        {
+            return View();
+        }
 
         [Route("/CatGallery")]
         

@@ -9,7 +9,7 @@
 
     }
 }
-//should this be in here or adoption profile controller?
+//should this be in here ?
 
     /*public int Id { get; }
     static private int nextId = 1;
@@ -37,4 +37,4 @@
     public override int GetHashCode()
     {
         return HashCode.Combine(Id);
-    }
+    }*/

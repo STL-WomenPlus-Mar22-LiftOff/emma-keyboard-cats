@@ -28,5 +28,5 @@ public class User
     public string? Address { get; set; }
 }
 
-//Add public list of user's favorited adoptable cats
+// list of user's favorited adoptable cats
 //public List<Cat> Favorites { get; set; }

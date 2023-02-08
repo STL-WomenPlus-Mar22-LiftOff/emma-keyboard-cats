@@ -1,0 +1,12 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace Keyboard_Cats.wwwroot.css
+{
+    public class AdoptionProfile : Controller
+    {
+        public IActionResult Index()
+        {
+            return View();
+        }
+    }
+}

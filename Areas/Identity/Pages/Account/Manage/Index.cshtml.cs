@@ -4,6 +4,7 @@
 
 using System;
 using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
 using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Keyboard_Cats.Areas.Identity.Data;
@@ -69,7 +70,7 @@ namespace Keyboard_Cats.Areas.Identity.Pages.Account.Manage
             public string? PhoneNumber { get; set; }
          
         }
-
+       
         private async Task LoadAsync(Keyboard_CatsUser user)
         {
             var userName = await _userManager.GetUserNameAsync(user);
@@ -89,7 +90,7 @@ namespace Keyboard_Cats.Areas.Identity.Pages.Account.Manage
 
             };
         }
-
+        
         public async Task<IActionResult> OnGetAsync()
         {
             var user = await _userManager.GetUserAsync(User);

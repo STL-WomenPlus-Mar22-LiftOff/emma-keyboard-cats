@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.Build.Framework;
 using System.ComponentModel.DataAnnotations;
 using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribute;
+using System.Security.Claims;
 
 namespace Keyboard_Cats.Areas.Identity.Data;
 
@@ -22,5 +23,6 @@ public class Keyboard_CatsUser : IdentityUser
     public string? address { get; set; }
 
 }
+
 
 

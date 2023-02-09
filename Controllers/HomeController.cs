@@ -42,5 +42,10 @@ namespace Keyboard_Cats.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        [Route("/RegisteredUser")]
+        public IActionResult RegisteredUser()
+        {
+            return View();
+        }
     }
 }

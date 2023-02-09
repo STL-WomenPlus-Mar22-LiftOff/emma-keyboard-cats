@@ -1,6 +1,4 @@
-﻿@using Keyboard_Cats.Areas.Identity.Pages.Account.Manage;
-
-<link rel="stylesheet" type="text/css" href="~/css/GuestPage.css" />
+﻿<link rel="stylesheet" type="text/css" href="~/css/GuestPage.css" />
 
 @*<h1>KeyBoard Cats</h1>*@
 <header>
@@ -12,12 +10,13 @@
 
         <nav>
             <ul>
-                <li><a href="/Identity/Account/Index">Update Profile</a></li>
+                <li><a href="/Identity/Account/Manage/Index">Update Profile</a></li>
                 <li><a href="#">Vet Nearby</a></li>
                 <li><a href="#">Cat Generator</a></li>
                 <li><a href="#">Home</a></li>
                 <li><a href="/Identity/Account/Logout">Log Out</a></li>
             </ul>
+            <partial name ="_LoginPartial" />
         </nav>
     </div>
 </header>

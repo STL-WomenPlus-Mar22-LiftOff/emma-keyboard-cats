@@ -52,7 +52,7 @@ namespace Keyboard_Cats.Controllers
         }
 
         [Route("/CatGallery")]
-        
+       
         public async Task<IActionResult> CatGallery(string CatResponse)
         { 
             //HttpClient should be instantiated once and not be disposed 
@@ -85,32 +85,43 @@ namespace Keyboard_Cats.Controllers
                 authInfo = JsonConvert.DeserializeObject<AuthResponse>(responseString);
                 Console.WriteLine("Success");
             }
-            
-                List<Cat> catInfo = new List<Cat>();
 
-             
+
+            string catInfo = "";
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authInfo.access_token);
-
-
            
-               HttpResponseMessage Res = await client.GetAsync("https://api.petfinder.com/v2/animals?type=cat");
-                if (Res.IsSuccessStatusCode)
+              // HttpResponseMessage Res = await client.GetAsync("https://api.petfinder.com/v2/animals?type=cat");
+
+
+              var Res = await client.GetAsync("https://api.petfinder.com/v2/animals?type=cat");
+
+
+            if (Res.IsSuccessStatusCode)
                 {
-
-                
-                _ = Res.Content.ReadAsStringAsync().Result;
-             
-                   
+                catInfo = Res.Content.ReadAsStringAsync().Result;
                     Console.WriteLine("Success");
+            }
 
-                } 
-                Console.WriteLine(catInfo); 
+            Cat cats = JsonConvert.DeserializeObject<Cat>(catInfo);
+            /*for (int i = 0; i <= cats.AnimalsList.Count; i++)
+            {
+                if (cats.AnimalsList.Count != null)
+                ViewBag.id = cats.AnimalsList[i].Id.ToString();
+                ViewBag.name = cats.AnimalsList[i].Name.ToString();
+               // ViewBag.description = cats.AnimalsList[i].Description.ToString();
+                ViewBag.photos = cats.AnimalsList[i].PhotosList.ToString();
+            } */
 
 
-       
+            // ViewBag.singleCatImageLink =
 
-            return View(catInfo);
+          /*  if (cats.AnimalsList[0].PhotosList[0] != null)
+            {
+                ViewBag.CatImageLink = cats.AnimalsList[0].PhotosList[0].Small.ToString();
+            } */
+
+            return View(cats);
         }
 
             [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

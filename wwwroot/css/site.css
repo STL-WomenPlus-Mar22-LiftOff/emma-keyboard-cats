@@ -1,4 +1,4 @@
-/*Move all this to Index.cshtml in Home Views*/
+/*Move all this to Index.cshtml in Home Views except background img & font colors*/
 html {
   font-size: 14px;
 }

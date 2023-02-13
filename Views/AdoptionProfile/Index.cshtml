@@ -15,6 +15,20 @@
        .carousel-control-next{
            font-size: 40px;
        }
+       .btn{
+           margin: 4px;
+           box-shadow: 1px 1px 5px #888888;
+           color: #fff;
+           background-color: mediumpurple;
+           border-bottom: 2px solid #9370DB;
+       }
+       .btn:hover, .btn:focus {
+           color: #fff;
+           background-color: #70DB93;
+           border-bottom:2px solid #70DB93;
+           outline: none;
+       }
+
     </style>
   </head>
   <!--Header needs to be added-->
@@ -82,9 +96,7 @@
         </div>
         <!-- Favorite Button -->
         <div class="col-sm-4">
-          <a href="#" class="btn btn-info btn-lg">
-            <i class="bi bi-heart-fill"></i>
-          </a>
+            <button type="button" class="btn text-uppercase btn-lg">Save to favorites</button>
           <!-- Rescue Info -->
           <div class="well well-sm">
             <address>

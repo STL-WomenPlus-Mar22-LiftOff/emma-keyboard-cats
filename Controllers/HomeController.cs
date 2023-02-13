@@ -39,6 +39,11 @@ namespace Keyboard_Cats.Controllers
             return View();
         }
 
+        [Route("/AboutUs")]
+        public IActionResult AboutUs()
+        {
+            return View();
+        }
 
         [Route("/Guest")]
         public IActionResult Guest()

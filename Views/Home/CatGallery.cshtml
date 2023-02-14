@@ -48,17 +48,15 @@ using Keyboard_cat.Model;
     <body>
 
         <h1> Cat Adoption Gallery</h1>
-    @foreach(string img in @ViewBag.photos)
+    
+    @foreach (string img in @ViewBag.CatImageLink)
     {
-        <tr>
-            <td>
-                <img src="@img[0]" />
-                <img src="@img[1]" />
-                <img src="@img[2]" />
-                <img src="@img[3]" />
-                <img src="@img[4]" />
-            </td>
-        </tr>
+        
+           
+                <img src="@img" />
+              
+           
+       
         
     }
     

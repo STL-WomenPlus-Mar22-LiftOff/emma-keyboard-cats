@@ -113,14 +113,24 @@ namespace Keyboard_Cats.Controllers
                 ViewBag.photos = cats.AnimalsList[i].PhotosList.ToString();
             } */
 
-
+            List<string> images = new List<string>();
             // ViewBag.singleCatImageLink =
-
-          /*  if (cats.AnimalsList[0].PhotosList[0] != null)
+            foreach (var cat in cats.AnimalsList)
             {
-                ViewBag.CatImageLink = cats.AnimalsList[0].PhotosList[0].Small.ToString();
-            } */
 
+
+                if (cat.PhotosList.Count > 0)
+                {
+                    // ViewBag.CatImageLink = cats?.AnimalsList[0]?.PhotosList[0]?.Small?.ToString() ?? string.Empty;
+
+
+                    images.Add(cat.PhotosList[0].Medium.ToString());
+                    
+                   
+                }
+               
+            }
+            ViewBag.CatImageLink = images;
             return View(cats);
         }
 

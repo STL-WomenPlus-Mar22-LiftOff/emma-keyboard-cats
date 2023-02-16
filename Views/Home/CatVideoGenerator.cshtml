@@ -1,0 +1,38 @@
+﻿<link rel="stylesheet" type="text/css" href="~/css/CatVideoGenerator.css"/>
+@{
+    ViewData["Title"] = "Cat Video Generator";
+}
+    <div class="container">
+
+        <img src="~/images/keyboard cat!.gif" alt="logo" class="logo" />
+
+
+        <nav>
+            <ul>
+                <a asp-asp-controller="Home" asp-action="Index">
+                <li><a href="/Identity/Account/Login">Login</a></li> </a>
+                <a asp-asp-controller="Home" asp-action="CatGallery">
+                <li><a href="/CatGallery">Cat Gallery</a></li> </a>
+               <a asp-asp-controller="Home" asp-action="Guest">
+                <li><a href="/">Home</a></li> </a>
+            </ul>
+        </nav>
+    </div>
+<h1>Cat Video Generator</h1>
+
+<body>
+
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/videoseries?list=PLL7EOZrKC9SGXw10uXB-Vw8f-52xIjUJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+    <div class="text-center">
+    <p><form action="/Identity/Account/Login"><button type="submit">Log In</button></form></p>
+    <p><form action="/Identity/Account/Register"><button type="submit">Register</button></form></p>
+    <p> <a asp-controller="Home" asp-action="Guest">Continue as Guest </a></p>
+    <p><a href="">Privacy</a></p>
+  
+    <img src="~/images/moving-cat-3.gif" />
+    </div>
+
+</body>

@@ -50,9 +50,14 @@ namespace Keyboard_Cats.Controllers
         {
             return View();
         }
+        [Route("/CatVideoGenerator")]
+        public IActionResult CatVideoGenerator()
+        {
+            return View();
+        }
 
         [Route("/CatGallery")]
-        
+       
         public async Task<IActionResult> CatGallery(string CatResponse)
         { 
             //HttpClient should be instantiated once and not be disposed 
@@ -85,32 +90,55 @@ namespace Keyboard_Cats.Controllers
                 authInfo = JsonConvert.DeserializeObject<AuthResponse>(responseString);
                 Console.WriteLine("Success");
             }
-            
-                List<Cat> catInfo = new List<Cat>();
 
-             
+
+            string catInfo = "";
                 client.DefaultRequestHeaders.Clear();
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authInfo.access_token);
-
-
            
-               HttpResponseMessage Res = await client.GetAsync("https://api.petfinder.com/v2/animals?type=cat");
-                if (Res.IsSuccessStatusCode)
+              // HttpResponseMessage Res = await client.GetAsync("https://api.petfinder.com/v2/animals?type=cat");
+
+
+              var Res = await client.GetAsync("https://api.petfinder.com/v2/animals?type=cat");
+
+
+            if (Res.IsSuccessStatusCode)
                 {
-
-                
-                _ = Res.Content.ReadAsStringAsync().Result;
-             
-                   
+                catInfo = Res.Content.ReadAsStringAsync().Result;
                     Console.WriteLine("Success");
+            }
 
-                } 
-                Console.WriteLine(catInfo); 
+            Cat cats = JsonConvert.DeserializeObject<Cat>(catInfo);
+            /*for (int i = 0; i <= cats.AnimalsList.Count; i++)
+            {
+                if (cats.AnimalsList.Count != null)
+                ViewBag.id = cats.AnimalsList[i].Id.ToString();
+                ViewBag.name = cats.AnimalsList[i].Name.ToString();
+               // ViewBag.description = cats.AnimalsList[i].Description.ToString();
+                ViewBag.photos = cats.AnimalsList[i].PhotosList.ToString();
+            } */
 
+            //call the variable outside of the foreach statemetn so it can be used in viewbag.
+            List<string> images = new List<string>();
+            //Loop through the animal list to find property you are looking for
+            foreach (var cat in cats.AnimalsList)
+            {
 
-       
+                //to make sure it doesn't break from beign null
+                if (cat.PhotosList.Count > 0)
+                {
+                    // ViewBag.CatImageLink = cats?.AnimalsList[0]?.PhotosList[0]?.Small?.ToString() ?? string.Empty;
 
-            return View(catInfo);
+                    //the exact properties you are using will go here.
+                    images.Add(cat.PhotosList[0].Medium.ToString());
+                    
+                   
+                }
+               
+            }
+            //to be able to pull the api into the view
+            ViewBag.CatImageLink = images;
+            return View(cats);
         }
 
             [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

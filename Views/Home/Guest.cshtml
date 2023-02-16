@@ -10,12 +10,9 @@
 
         <nav>
             <ul>
-                <a asp-asp-controller="Home" asp-action="Index">
-                <li><a href="#">Login</a></li> </a>
-                <a asp-asp-controller="Home" asp-action="CatGallery">
-                <li><a href="#">Cat Gallery</a></li> </a>
-               <a asp-asp-controller="Home" asp-action="Guest">
-                <li><a href="#">Home</a></li> </a>
+                <li><a href="/Identity/Account/Login">Login</a></li>
+                <li><a href="/CatGallery">Cat Gallery</a></li> 
+                <li><a href="/">Home</a></li> 
             </ul>
         </nav>
     </div>
@@ -38,13 +35,13 @@
         <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12468.131128172792!2d-90.1867504!3d38.6251269!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x79ed2889c696a834!2sThe%20Gateway%20Arch!5e0!3m2!1sen!2sus!4v1673822029886!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </a>
     @*youtube video*@
-
+   
     <iframe class="youtube" width="560" height="315" src="https://www.youtube.com/embed/romnmHdGH08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     @*articles about cats*@
     <article>
         <h2>The Inner Life of Cats</h2>
         <img src="~/images/why cats.webp" height="340" width="350" draggable="false" />
-        <p>Wanna know why cats behave the way theye do? Here is an article that interviews John Bradshaw who is the author of the book Cat Sense. This articles talks why and how a cat purrs, why they knock objects off of shelves or tables, and why they loves boxs so much. check it out in the link below! </p>
+        <p>Wanna know why cats behave the way they do? Here is an article that interviews John Bradshaw who is the author of the book Cat Sense. This articles talks why and how a cat purrs, why they knock objects off of shelves or tables, and why they loves boxs so much. check it out in the link below! </p>
         <a href="https://www.scientificamerican.com/article/the-inner-life-of-cats/">The Interview</a>
 
     </article>
@@ -60,9 +57,13 @@
         <h2>Symptom Checker</h2>
         <img src="~/images/cute cat.jpg" height="340" width="350" draggable="false" />
         <p>
-            Is your pet acting stranges or showing symptoms but your not sure what? Check out this PetMD that can help you narrow dow nto certain possiblities
+            Is your pet acting strange or showing symptoms but your not sure what? Check out this PetMD that can help you narrow dow nto certain possiblities
             for your pet to have. They have a symptom checker along with other articles that talks about dealing with certain diseases and disorder.
         </p>
         <a href="https://www.petmd.com/symptom-checker">Symptom Checker Site</a>
     </article>
+    <div> 
+        
+        <p> <a asp-controller="Home" asp-action="CatVideoGenerator">Cat Video Generator</a></p>
+    </div>
 </body>

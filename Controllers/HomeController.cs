@@ -113,23 +113,25 @@ namespace Keyboard_Cats.Controllers
                 ViewBag.photos = cats.AnimalsList[i].PhotosList.ToString();
             } */
 
+            //call the variable outside of the foreach statemetn so it can be used in viewbag.
             List<string> images = new List<string>();
-            // ViewBag.singleCatImageLink =
+            //Loop through the animal list to find property you are looking for
             foreach (var cat in cats.AnimalsList)
             {
 
-
+                //to make sure it doesn't break from beign null
                 if (cat.PhotosList.Count > 0)
                 {
                     // ViewBag.CatImageLink = cats?.AnimalsList[0]?.PhotosList[0]?.Small?.ToString() ?? string.Empty;
 
-
+                    //the exact properties you are using will go here.
                     images.Add(cat.PhotosList[0].Medium.ToString());
                     
                    
                 }
                
             }
+            //to be able to pull the api into the view
             ViewBag.CatImageLink = images;
             return View(cats);
         }

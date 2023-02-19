@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Google.Apis.Services;
+using Keyboard_Cats.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Keyboard_Cats.Controllers
 {
-    public class VeterinarianController : Controller
+    public class VetFinderController : Controller
     {
         public IActionResult Index()
         {
@@ -25,7 +27,7 @@ namespace Keyboard_Cats.Controllers
 
             var response = await service.Search.QueryAsync(request);
 
-            var viewModel = new VeterinarianSearchViewModel
+            var viewModel = new VetFinderSearchViewModel
             {
                 Query = query,
                 Results = response.Results

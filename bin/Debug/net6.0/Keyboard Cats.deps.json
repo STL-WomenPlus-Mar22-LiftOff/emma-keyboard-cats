@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Keyboard Cats/1.0.0": {
         "dependencies": {
+          "GoogleMapsApi": "1.2.1",
           "Microsoft.AspNet.WebApi.Client": "5.2.9",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.12",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.12",
@@ -21,6 +22,18 @@
         },
         "runtime": {
           "Keyboard Cats.dll": {}
+        }
+      },
+      "GoogleMapsApi/1.2.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Net.Http": "4.3.4"
+        },
+        "runtime": {
+          "lib/net6.0/GoogleMapsApi.dll": {
+            "assemblyVersion": "1.2.1.0",
+            "fileVersion": "1.2.1.0"
+          }
         }
       },
       "Humanizer.Core/2.8.26": {
@@ -2404,6 +2417,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "GoogleMapsApi/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3wpsCV8Kxdix4Id9Wmx1L0NBa8rfpiYaPKutmrmJSYCK2UrwInGTn1c5SMGxp4VEVl+xlgePzoJeDkfouFvP7g==",
+      "path": "googlemapsapi/1.2.1",
+      "hashPath": "googlemapsapi.1.2.1.nupkg.sha512"
     },
     "Humanizer.Core/2.8.26": {
       "type": "package",

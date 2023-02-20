@@ -1,4 +1,6 @@
-﻿namespace Keyboard_Cats.Models
+﻿using GooglePlacesApi.Models;
+
+namespace Keyboard_Cats.Models
 {
     public class VetFinderSearchViewModel
     {

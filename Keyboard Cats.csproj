@@ -9,8 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Areas\NewFolder\**" />
+    <Content Remove="Areas\NewFolder\**" />
+    <EmbeddedResource Remove="Areas\NewFolder\**" />
+    <None Remove="Areas\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Google.Apis" Version="1.59.0" />
     <PackageReference Include="GoogleMapsApi" Version="1.2.1" />
+    <PackageReference Include="GooglePlacesApi" Version="1.0.17" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.12" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.12" />
@@ -24,10 +32,6 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.11" />
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="6.0.2" />
     <PackageReference Include="System.Net.Http" Version="4.3.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Areas\NewFolder\" />
   </ItemGroup>
 
 </Project>

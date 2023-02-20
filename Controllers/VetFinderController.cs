@@ -1,6 +1,8 @@
 ﻿using Google.Apis.Services;
 using Keyboard_Cats.Models;
 using Microsoft.AspNetCore.Mvc;
+using GoogleMapsApi.Entities.Common;
+using GoogleMapsApi.Entities.PlacesFind.Request;
 
 namespace Keyboard_Cats.Controllers
 {

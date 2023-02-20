@@ -63,7 +63,7 @@ namespace Keyboard_Cats.Controllers
             //HttpClient should be instantiated once and not be disposed 
             HttpClient client = new HttpClient();
 
-            // Api credientials 
+            // Api credentials 
             var values = new Dictionary<string, string>
         {
             { "grant_type", "client_credentials" },
@@ -124,7 +124,7 @@ namespace Keyboard_Cats.Controllers
             foreach (var cat in cats.AnimalsList)
             {
 
-                //to make sure it doesn't break from beign null
+                //to make sure it doesn't break from being null
                 if (cat.PhotosList.Count > 0)
                 {
                     // ViewBag.CatImageLink = cats?.AnimalsList[0]?.PhotosList[0]?.Small?.ToString() ?? string.Empty;

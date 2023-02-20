@@ -44,7 +44,45 @@ namespace Keyboard_Cats.Models
                 get { return _description; }
             }
 
+            [System.Serializable]
+            public class Attributes
+            {
+                [JsonProperty("spayed_neutered")] public bool _spayed_neutered;
+                [JsonProperty("shots_current")] public bool _shots_current;
 
+                public bool Spayed_neutered
+                {
+                    get { return _spayed_neutered; }
+                }
+
+                public bool Shots_current
+                {
+                    get { return _shots_current; }
+                }
+            }
+
+            [System.Serializable]
+            public class Environment
+            {
+                [JsonProperty("children")] public bool? _children;
+                [JsonProperty("dogs")] public bool? _dogs;
+                [JsonProperty("cats")] public bool? _cats;
+
+                public bool? Children
+                {
+                    get { return _children; }
+                }
+
+                public bool? Dogs
+                {
+                    get { return _dogs; }
+                }
+
+                public bool? Cats
+                {
+                    get { return _cats; }   
+                }
+            }
             public List<Photos>? PhotosList
             {
                 get { return _photosList; }
@@ -122,24 +160,6 @@ namespace Keyboard_Cats.Models
          }
 
          [System.Serializable]
-         public class Attributes
-         {
-             [JsonProperty("spayed_neutered")] public bool spayed_neutered { get; set; }
-             [JsonProperty("house_trained")] public bool house_trained { get; set; }
-             [JsonProperty("declawed")] public bool declawed { get; set; }
-             [JsonProperty("special_needs")] public bool special_needs { get; set; }
-             [JsonProperty("shots_current")] public bool shots_current { get; set; }
-         }
-
-         [System.Serializable]
-         public class Environment
-         {
-             [JsonProperty("children")] public bool? children { get; set; }
-             [JsonProperty("dogs")] public bool? dogs { get; set; }
-             [JsonProperty("cats")] public bool? cats { get; set; }
-         }
-
-         [System.Serializable]
          public class Primary_Photo_Cropped
          {
              [JsonProperty("small")] public string small;
@@ -167,45 +187,4 @@ namespace Keyboard_Cats.Models
              {
                  get { return full; }
              }
-         }
-
-         
-
-
-
-
-
-
-
-        /*
-
-        private int Id { get; set; }
-        private int organization_id { get; set; }
-        public string url { get; set; } 
-        public string breeds { get; set; }
-        public string color { get; set; }
-        public int age { get; set; }    
-        public string gender { get; set; }
-        public string name { get; set; }
-        public string description { get; set; }
-        public string photos { get; set; }
-        private string status { get; set; }
-        public bool spayed_neutered { get; set; }
-        public bool shot_current { get; set; }
-        public bool children { get; set; }  
-        public bool dogs { get; set; }
-        public bool cats { get; set; }    
-        public Contact contact { get; set; }
-        public int distance { get; set; }   
-        public string _links { get; set; }
-        
-    }
-    public class Contact
-    {
-        public string email { get; set; }
-        public int phone { get; set; }
-        public string address { get; set; }
-
-    }*/
-    
-
+         }*/

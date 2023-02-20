@@ -1,13 +1,16 @@
 ﻿namespace Keyboard_Cats.Models
 {
-    public class AdoptionProfile
+    public class AdoptionProfile 
     {
+        public Cat Cat { get; set; }    
         public string Name { get; set; }
         public string Description { get; set; }
         public int Age { get; set; }
    
 
     }
+
+    
 }
 //should this be in here ?
 

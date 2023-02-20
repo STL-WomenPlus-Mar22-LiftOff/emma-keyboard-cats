@@ -26,6 +26,7 @@ namespace Keyboard_Cats.Models
             [JsonProperty("name")] private string _name;
             [JsonProperty("description")] private string _description;
             [JsonProperty("photos")] private List<Photos> _photosList;
+            [JsonProperty("contact")] private Contact _contact;
 
 
             public int Id
@@ -75,6 +76,28 @@ namespace Keyboard_Cats.Models
                 public string Full
                 {
                     get { return _full; }
+                }
+            }
+            [System.Serializable]
+            public class Contact
+            {
+                [JsonProperty("email")] public string _email;
+                [JsonProperty("phone")] public string _phone;
+                [JsonProperty("address")] public string _address;
+
+                public string Email
+                {
+                    get { return _email; }
+                }
+
+                public string Phone
+                {
+                    get { return _phone; }  
+                }
+
+                public string Address
+                {
+                    get { return _address; }
                 }
             }
         }
@@ -146,14 +169,7 @@ namespace Keyboard_Cats.Models
              }
          }
 
-         [System.Serializable]
-         public class Contact
-         {
-             [JsonProperty("email")] public string email { get; set; }
-             [JsonProperty("phone")] public string phone { get; set; }
-             [JsonProperty("address")] public string address { get; set; }
-         } */
-
+         
 
 
 

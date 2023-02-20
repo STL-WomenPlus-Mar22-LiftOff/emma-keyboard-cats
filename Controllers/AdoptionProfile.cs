@@ -10,12 +10,13 @@ namespace Keyboard_Cats.Controllers
         [Route("/adoptionprofile/")]
         public IActionResult Index()
         {
-            Cat cat= new Cat();
+            AdoptionProfile profile = new AdoptionProfile();
 
-            foreach (profile)
-            {
-
-            }
+            //foreach (AdoptionProfile profile in Models)
+            //{
+              //make a cat?
+            //}
+            //or foreach cat(img) in cat gallery, display adoption profile view model?
             return View();
         }
         /*

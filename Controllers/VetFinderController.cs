@@ -24,7 +24,7 @@ namespace Keyboard_Cats.Controllers
                 Keyword = query,
                 Type = "veterinary_care",
                 Rankby = "distance",
-                Location = new Location(37.7749, -122.4194) // San Francisco, CA
+                Location = new Location(38.6270, -90.1994) // Saint Louis, MO
             };
 
             var response = await service.Search.QueryAsync(request);

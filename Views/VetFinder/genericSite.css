@@ -1,0 +1,106 @@
+/* Add your custom styles here */
+
+/* Set the font to Open Sans */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Increase the font size of the navbar links */
+.navbar-nav > li > a {
+  font-size: 18px;
+}
+
+/* Change the background color of the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+/* Change the color of the footer links */
+.footer a {
+  color: #fff;
+}
+
+/* Set the height of the jumbotron */
+.jumbotron {
+  height: 400px;
+  background-image: url('/images/cat.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Center the jumbotron text */
+.jumbotron .container {
+  position: relative;
+  top: 100px;
+}
+
+/* Increase the font size of the jumbotron text */
+.jumbotron h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+/* Change the color of the button on the jumbotron */
+.jumbotron a.btn {
+  background-color: #f5a623;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 0;
+  padding: 10px 30px;
+}
+
+/* Add some padding to the content section */
+.content {
+  padding: 50px 0;
+}
+
+/* Style the callout section */
+.callout {
+  background-color: #f5f5f5;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.callout h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.callout p {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+/* Style the features section */
+.features {
+  padding: 50px 0;
+}
+
+.features .col-md-4 {
+  margin-bottom: 30px;
+}
+
+.features h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.features p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.features i {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #f5a623;
+}

@@ -1,12 +1,20 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model VetFinderSearchViewModel
+<script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl4UbaqqJVgTzAHGRWwGr3sbFvVqqYQ98&libraries=places&callback=initMap">
+</script>
+
 @{
+    ViewData["Title"] = "Vet Finder";
 }
- <div> @*vetfinder search form*@
-     <form asp-action="Search" method="get">
-         <label for="query">Search for veterinarians near:</label>
-         <input type="text" id="query" name="query" required>
-         <button type="submit">Search</button>
-     </form>
- </div>
+
+<h1>Vet Finder</h1>
+
+<p>Welcome to the Vet Finder app! Enter a search query to find veterinarians near you.</p>
+
+<form asp-action="Search">
+    <div class="form-group">
+        <label asp-for="Query">Search for:</label>
+        <input asp-for="Query" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>

@@ -1,25 +1,56 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿
 @model VetFinderSearchViewModel
+<script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl4UbaqqJVgTzAHGRWwGr3sbFvVqqYQ98&libraries=places&callback=initMap">
+</script>
 
-<h1>Search Results for "@Model.Query"</h1>
+@*<form method="get" action="/VetFinder/Search">
+    <label for="query">Search for veterinarians:</label>
+    <input type="text" id="query" name="query">
+    <button type="submit">Search</button>
+</form>
 
-@if (Model.Results.Count == 0)
+@if (Model.Results != null && Model.Results.Any())
 {
-    <p>No results found.</p>
+        <h2>Results for "@Model.Query":</h2>
+        <ul>
+        @foreach (var result in Model.Results)
+        {
+                    <li>@result.Name</li>
+        }
+        </ul>
+}
+else if (!string.IsNullOrEmpty(Model.Query))
+{
+        <p>No results found for "@Model.Query".</p>
+}
+*@
+
+<h1>Results for "@Model.Query":</h1>
+
+@if (Model.Results != null && Model.Results.Any())
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var result in Model.Results)
+            {
+                <tr>
+                    <td>@result.Name</td>
+                    <td>@result.FormattedAddress</td>
+                    <td>@result.Rating</td>
+                </tr>
+            }
+        </tbody>
+    </table>
 }
 else
 {
-    <ul>
-        @foreach (var result in Model.Results)
-        {
-            <li>
-                <h2>@result.Name</h2>
-                <p>@result.Vicinity</p>
-            </li>
-        }
-    </ul>
+    <p>No results found.</p>
 }

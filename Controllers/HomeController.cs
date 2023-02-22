@@ -71,7 +71,7 @@ namespace Keyboard_Cats.Controllers
             { "client_secret", _config["PetFinder:Secret"] }
             
         };
-
+            
             // FormUrlEncodedContent transforms values to UTF encoding to be read by the server
             var content = new FormUrlEncodedContent(values);
 

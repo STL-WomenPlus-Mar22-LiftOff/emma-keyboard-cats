@@ -12,12 +12,13 @@ namespace Keyboard_Cats.Controllers
         {
             AdoptionProfile profile = new AdoptionProfile();
 
-            //foreach (AdoptionProfile profile in Models)
-            //{
-              //make a cat?
-            //}
-            //or foreach cat(img) in cat gallery, display adoption profile view model?
-            return View();
+            // foreach cat(img) in cat gallery, display adoption profile view model?
+            foreach (var cat in ViewBag.CatImageLink)
+            {
+                
+            }
+                
+            return View(profile);
         }
         /*
         

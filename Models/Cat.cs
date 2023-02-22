@@ -121,7 +121,7 @@ namespace Keyboard_Cats.Models
             {
                 [JsonProperty("email")] public string _email;
                 [JsonProperty("phone")] public string _phone;
-                [JsonProperty("address")] public string _address;
+                [JsonProperty("address1")] public string _address1;
 
                 public string Email
                 {
@@ -133,9 +133,9 @@ namespace Keyboard_Cats.Models
                     get { return _phone; }  
                 }
 
-                public string Address
+                public string Address1
                 {
-                    get { return _address; }
+                    get { return _address1; }
                 }
             }
         }

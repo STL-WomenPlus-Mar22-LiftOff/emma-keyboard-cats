@@ -118,7 +118,7 @@ namespace Keyboard_Cats.Controllers
                 ViewBag.photos = cats.AnimalsList[i].PhotosList.ToString();
             } */
 
-            //call the variable outside of the foreach statemetn so it can be used in viewbag.
+            //call the variable outside of the foreach statement so it can be used in viewbag.
             List<string> images = new List<string>();
             //Loop through the animal list to find property you are looking for
             foreach (var cat in cats.AnimalsList)

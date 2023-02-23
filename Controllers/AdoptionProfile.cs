@@ -1,7 +1,9 @@
 ﻿using Keyboard_Cats.Data;
 using Keyboard_Cats.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using static Keyboard_Cats.Models.Cat;
 
 namespace Keyboard_Cats.Controllers
 {
@@ -14,13 +16,16 @@ namespace Keyboard_Cats.Controllers
             context = dbContext;
         }
 
+        //display information for each cat profile
         [HttpGet]
         [Route("/adoptionprofile/")]
-        public IActionResult Index(Cat Id)
+        public IActionResult Index(int id)
         {
             Cat cat = context.Cats
-                .include
-            return View();
+                .Include(c => c.name)
+                .Include(c => c.Description)
+                .Single(context => context.Id == id);
+            return View(cat);
         }
         /*
         

@@ -4,17 +4,10 @@ namespace Keyboard_Cats.Models
 {
     public class AdoptionProfile
     {
-        public string Name { get; set; }
+        public int Id { get; set; }
 
+        public Cat Cat { get; set; }
 
-
-        public AdoptionProfile(Animals cat)
-        {
-            Name = cat.Name;
-        }
-
-        public AdoptionProfile()
-        {
-        }
+        
     }
 }

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Keyboard_Cats.Models.AdoptionProfile">
+    <Position X="4.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AdoptionProfile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Keyboard_Cats.Models.Cat">
+    <Position X="4.25" Y="1.25" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Keyboard_Cats.Models.Cat.Animals" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Models\Cat.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Cat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

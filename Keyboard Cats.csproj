@@ -17,6 +17,8 @@
 
   <ItemGroup>
     <PackageReference Include="Google.Apis" Version="1.59.0" />
+    <PackageReference Include="Google.Apis.Core" Version="1.60.0" />
+    <PackageReference Include="GoogleApi" Version="4.5.3" />
     <PackageReference Include="GoogleMapsApi" Version="1.2.1" />
     <PackageReference Include="GooglePlacesApi" Version="1.0.17" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.9" />

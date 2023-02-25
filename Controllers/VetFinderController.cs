@@ -1,17 +1,32 @@
 ﻿using Google.Apis.Services;
-using Keyboard_Cats.Models;
-using Microsoft.AspNetCore.Mvc;
 using GoogleMapsApi.Entities.Common;
 using GoogleMapsApi.Entities.Places.Request;
-using GoogleMapsApi.Entities.PlaceAutocomplete.Request;
-using GooglePlacesApi.Models;
 using GoogleMapsApi.Entities.Places.Response;
+using GooglePlacesApi.Models;
+using Keyboard_Cats.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace VetFinder.Controllers
 {
     public class VetFinderController : Controller
     {
+        private readonly ILogger<VetFinderController> _logger;
+
+        private readonly IConfiguration _config;
+
+        public VetFinderController(ILogger<VetFinderController> logger, IConfiguration config)
+        {
+            _logger = logger;
+            _config = config;
+        }
+
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        [Route("/Search")]
+        public IActionResult Search()
         {
             return View();
         }
@@ -43,7 +58,6 @@ namespace VetFinder.Controllers
         }
     }
 }
-
 
 //namespace Keyboard_Cats.Controllers
 //{

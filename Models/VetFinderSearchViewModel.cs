@@ -1,5 +1,4 @@
-﻿using GooglePlacesApi.Models;
-using GoogleMapsApi.Entities.PlacesDetails.Response;
+﻿using GoogleMapsApi.Entities.PlacesDetails.Response;
 using GoogleMapsApi.Entities.PlacesFind.Response;
 
 namespace Keyboard_Cats.Models
@@ -11,7 +10,6 @@ namespace Keyboard_Cats.Models
         public PlacesFindResponse Results { get; set; }
     }
 }
-
 
 //namespace Keyboard_Cats.Models
 //{

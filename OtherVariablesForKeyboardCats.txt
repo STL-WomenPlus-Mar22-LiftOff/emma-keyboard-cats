@@ -1,0 +1,21 @@
+ [JsonProperty("url")] public string url { get; set; }
+            [JsonProperty("type")] public string type { get; set; }
+            [JsonProperty("species")] public string species { get; set; }
+            [JsonProperty("breeds")] public Breeds breeds { get; set; }
+            [JsonProperty("color")] public Colors colors { get; set; }
+            [JsonProperty("age")] public string age { get; set; }
+            [JsonProperty("gender")] public string gender { get; set; }
+            [JsonProperty("size")] public string size { get; set; }
+            [JsonProperty("coat")] public string coat { get; set; }
+            [JsonProperty("attributes")] public Attributes attributes { get; set; }
+            [JsonProperty("environment")] public Environment environment { get; set; }
+            [JsonProperty("tag")] public string[] tags { get; set; }
+ [JsonProperty("organization_animal_id")] public string organization_animal_id { get; set; }
+ [JsonProperty("organization_id")] public string organization_id;
+            [JsonProperty("primary_photo_cropped")] public Primary_Photo_Cropped primary_photo_cropped { get; set; }
+            [JsonProperty("videos")] public object[] videos { get; set; }
+            [JsonProperty("status")] public string status { get; set; }
+            [JsonProperty("status_changed_at")] public DateTime status_changed_at { get; set; }
+            [JsonProperty("published_at")] public DateTime published_at { get; set; }
+            [JsonProperty("distance")] public object distance { get; set; }
+            [JsonProperty("contact")] public Contact contact { get; set; }

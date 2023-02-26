@@ -27,19 +27,35 @@
     <body>
 
         <h1> Cat Adoption Gallery</h1>
+
+        <div class="slider-frame">
+            <div class="slide-images">
     @*To loop through the images provided and display them. Do not do array [], it will not loop the right way. *@
+   
     @foreach (string img in @ViewBag.CatImageLink)
     {
         
-           
+           <div class="img-container">
                 <img src="@img" />
-              
+               </div>
            
     
         
     }
-    
+        </div>
+    </div>
+    <div class="gallery-container">
+    @foreach (string img in @ViewBag.CatImageLink)
+    {
 
+        <div class="image-container">
+            <center> <img src="@img" /></center>
+        </div>
+
+
+
+    }
+    </div>
     @*
     <div class="box">
 

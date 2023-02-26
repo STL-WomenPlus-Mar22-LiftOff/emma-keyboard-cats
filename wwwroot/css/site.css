@@ -16,6 +16,7 @@ html {
 body {
    margin-bottom: 60px;
    background-image: url('../images/watercolorbg.webp');
+   background-size:cover;
    font-family:'Baskerville Old Face'
 }
 

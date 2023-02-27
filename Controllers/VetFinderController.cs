@@ -43,7 +43,7 @@ namespace VetFinder.Controllers
                 Keyword = query,
                 Type = "veterinary_care",
                 RankBy = RankBy.Distance,
-                Location = new Location(37.7749, -122.4194) // San Francisco, CA
+                Location = new GoogleMapsApi.Entities.Common.Location(37.7749, -122.4194) // San Francisco, CA
             };
 
             PlacesResponse response = await service.Search.QueryAsync(request);

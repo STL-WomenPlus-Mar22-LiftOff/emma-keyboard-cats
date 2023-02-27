@@ -28,11 +28,11 @@ namespace Keyboard_Cats.Controllers
             return View();
         }
 
-        //[Route("/VetFinder")]
-        //public IActionResult VetFinder()
-        //{
-        //    return View();
-        //}
+        [Route("/VetFinder")]
+        public IActionResult VetFinder()
+        {
+            return View();
+        }
 
         [Route("/Guest")]
         public IActionResult Guest()

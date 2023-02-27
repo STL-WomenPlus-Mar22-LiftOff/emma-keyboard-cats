@@ -4,31 +4,9 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAl4UbaqqJVgTzAHGRWwGr3sbFvVqqYQ98&libraries=places&callback=initMap">
 </script>
 
-@*<form method="get" action="/VetFinder/Search">
-    <label for="query">Search for veterinarians:</label>
-    <input type="text" id="query" name="query">
-    <button type="submit">Search</button>
-</form>
-
-@if (Model.Results != null && Model.Results.Any())
-{
-        <h2>Results for "@Model.Query":</h2>
-        <ul>
-        @foreach (var result in Model.Results)
-        {
-                    <li>@result.Name</li>
-        }
-        </ul>
-}
-else if (!string.IsNullOrEmpty(Model.Query))
-{
-        <p>No results found for "@Model.Query".</p>
-}
-*@
-
 <h1>Results for "@Model.Query":</h1>
 
-@if (Model.Results != null && Model.Results.Any())
+@if (Model.Results != null)
 {
     <table>
         <thead>
@@ -54,3 +32,24 @@ else
 {
     <p>No results found.</p>
 }
+@*<form method="get" action="/VetFinder/Search">
+    <label for="query">Search for veterinarians:</label>
+    <input type="text" id="query" name="query">
+    <button type="submit">Search</button>
+</form>
+
+@if (Model.Results != null && Model.Results.Any())
+{
+        <h2>Results for "@Model.Query":</h2>
+        <ul>
+        @foreach (var result in Model.Results)
+        {
+                    <li>@result.Name</li>
+        }
+        </ul>
+}
+else if (!string.IsNullOrEmpty(Model.Query))
+{
+        <p>No results found for "@Model.Query".</p>
+}
+*@

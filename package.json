@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "lightgallery": "^2.7.1"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.52.0"
   }
 }

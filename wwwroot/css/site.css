@@ -17,7 +17,7 @@ body {
    margin-bottom: 60px;
    background-image: url('../images/watercolorbg.webp');
    background-size:cover;
-   font-family:'Baskerville Old Face'
+   font-family:'Microsoft Sans Serif'
 }
 
 img {
@@ -92,3 +92,43 @@ nav {
         nav a:hover::before {
             width: 100%;
         }
+
+.text-box{
+    color:ghostwhite;
+    position:relative;
+    justify-content:center;
+    -webkit-text-stroke: 1px black;
+    margin-top: 10%;
+        
+}
+
+.text-box p{
+    font-size: 60px;
+    font-weight: 600 bold;
+    padding: 5%;
+    
+}
+
+    .text-box h2 {
+        font-size: 170px;
+        font-weight:bold;
+        line-height: 160px;
+        color: transparent;
+        -webkit-text-stroke: 15px ;
+        background: url('../images/cattest.jpg');
+        -webkit-background-clip: text;
+        background-position: 0 0;
+        animation: back 20s linear infinite;
+        
+    }
+
+    @keyframes back{
+        100%{
+            background-position: 2000px 0;
+        }
+    }
+    .text-box h3 {
+        font-size: 40px;
+        font-weight: 500;
+        padding: 5%;
+    }

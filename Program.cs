@@ -11,8 +11,8 @@ var connectionString = builder.Configuration.GetConnectionString("Keyboard_CatsC
 builder.Services.AddDbContext<Keyboard_CatsContext>(options =>
     options.UseSqlServer(connectionString));
 
-builder.Services.AddDbContext<CatDbContext>(options =>
-    options.UseSqlServer("ThisIsJustForMigrations"));
+//builder.Services.AddDbContext<CatDbContext>(options =>
+//    options.UseSqlServer("ThisIsJustForMigrations"));
 //services builder for multiple roles.
 /*builder.Services.AddIdentity<Keyboard_CatsUser, IdentityRole>().AddEntityFrameworkStores<Keyboard_CatsContext>().AddDefaultTokenProviders();*/
 

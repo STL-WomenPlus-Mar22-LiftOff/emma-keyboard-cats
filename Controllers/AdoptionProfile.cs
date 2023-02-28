@@ -9,9 +9,9 @@ namespace Keyboard_Cats.Controllers
 {
     public class AdoptionProfileController : Controller
     {
-        private CatDbContext context;
+        private Keyboard_CatsContext context;
 
-        public AdoptionProfileController(CatDbContext dbContext)
+        public AdoptionProfileController(Keyboard_CatsContext dbContext)
         {
             context = dbContext;
         }
@@ -19,17 +19,18 @@ namespace Keyboard_Cats.Controllers
         //display information for each cat profile
         [HttpGet]
         [Route("/adoptionprofile/")]
-        public IActionResult Index(int id)
+        public IActionResult Details(int id)
         {
-            Cat cat = context.Cats
-                .Include(c => c.name)
-                .Include(c => c.Description)
-                .Single(context => context.Id == id);
-            return View(cat);
+            
+            AdoptionProfile profile = context.Animals.
+                Where(a => a.Id == id)
+                .Include(context=> context.Animals)
+                .FirstOrDefault();
+            
+                return View(profile);
         }
         /*
         
-
 
         //method for saving favorited cats to user database
 

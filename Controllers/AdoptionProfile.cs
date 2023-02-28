@@ -1,15 +1,16 @@
-﻿using Keyboard_Cats.Data;
+﻿using keyboard_cats.models;
+using Keyboard_Cats.Data;
 using Keyboard_Cats.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using static Keyboard_Cats.Models.Cat;
+
 
 namespace Keyboard_Cats.Controllers
 {
     public class AdoptionProfileController : Controller
     {
-        private Keyboard_CatsContext context;
+        private readonly Keyboard_CatsContext context;
 
         public AdoptionProfileController(Keyboard_CatsContext dbContext)
         {
@@ -22,8 +23,8 @@ namespace Keyboard_Cats.Controllers
         public IActionResult Details(int id)
         {
             
-            AdoptionProfile profile = context.Animals.
-                Where(a => a.Id == id)
+            Adoptionprofile profile = context.Cats.
+                Where(ca => ca.animalsList.Id == id)
                 .Include(context=> context.Animals)
                 .FirstOrDefault();
             

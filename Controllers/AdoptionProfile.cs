@@ -1,6 +1,5 @@
-﻿using keyboard_cats.models;
+﻿using Keyboard_Cats.Models;
 using Keyboard_Cats.Data;
-using Keyboard_Cats.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
@@ -22,12 +21,16 @@ namespace Keyboard_Cats.Controllers
         [Route("/adoptionprofile/")]
         public IActionResult Details(int id)
         {
+            Cat catObj = context.Cats;
+            Cat catList = catObj.AnimalsList.Find(Cat, catObj.id)
+
+            //AdoptionProfile profile = context.Cats.animalsList
+            //    .Find(cat => cat.Id == id)
+                
+            //    .FirstOrDefault();
             
-            Adoptionprofile profile = context.Cats.
-                Where(ca => ca.animalsList.Id == id)
-                .Include(context=> context.Animals)
-                .FirstOrDefault();
-            
+
+
                 return View(profile);
         }
         /*

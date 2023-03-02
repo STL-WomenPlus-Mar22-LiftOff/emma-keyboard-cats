@@ -1,24 +1,24 @@
-﻿
-using System;
+﻿using System;
 using Keyboard_Cats.Models;
 
-namespace keyboard_cats.models
+namespace Keyboard_Cats.Models
 {
-    public class Adoptionprofile
+    public class AdoptionProfile
     {
-
         public int Id { get; set; }
+        public Cat Cat { get; set; }
+        public Cat.Animals Name { get; set; }
+        public Cat.Animals.Attributes Attributes{ get; set; }
 
-        public Cat? Cat { get; set; }
 
-
-        public Adoptionprofile()
+        public AdoptionProfile()
         {
         }
-        public Adoptionprofile(int id, Cat cat)
+        public AdoptionProfile(int id, Cat cat, )
         {
             Id = id;
             this.Cat = cat;
+            
 
         }
     }

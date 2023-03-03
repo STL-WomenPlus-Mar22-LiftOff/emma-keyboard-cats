@@ -16,7 +16,7 @@ namespace Keyboard_Cats.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        /*private readonly ILogger<HomeController> _logger;
 
         private readonly IConfiguration _config;
 
@@ -25,10 +25,8 @@ namespace Keyboard_Cats.Controllers
         {
             _logger = logger;
             _config = config;
-        }
+        }*/
 
-  
-          
         public IActionResult Index()
         {
                 return View();

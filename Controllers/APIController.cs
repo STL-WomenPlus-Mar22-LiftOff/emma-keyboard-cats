@@ -3,12 +3,11 @@ using Keyboard_Cats.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Diagnostics;
 using System.Net.Http.Headers;
 
 namespace Keyboard_Cats.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
     public class APIController : ControllerBase  
 
     {
@@ -64,10 +63,7 @@ namespace Keyboard_Cats.Controllers
             client.DefaultRequestHeaders.Clear();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", authInfo.access_token);
 
-
-
             var Res = await client.GetAsync("https://api.petfinder.com/v2/animals?type=cat");
-
 
             if (Res.IsSuccessStatusCode)
             {
@@ -77,9 +73,15 @@ namespace Keyboard_Cats.Controllers
 
             Cat cats = JsonConvert.DeserializeObject<Cat>(catInfo);
             
-            //db list of cats
+            //save cats to database
             
             return (IActionResult)cats;
+        }
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            // not returning a view.... iactionresult?
         }
     }
 }

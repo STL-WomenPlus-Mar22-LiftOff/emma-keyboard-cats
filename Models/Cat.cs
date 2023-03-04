@@ -22,14 +22,14 @@ namespace Keyboard_Cats.Models
         [System.Serializable]
         public class Animals
         {
-            [JsonProperty("id")] private int _id;
+            [JsonProperty("id")] private static int _id;
             [JsonProperty("name")] private string _name;
             [JsonProperty("description")] private string _description;
             [JsonProperty("photos")] private List<Photos> _photosList;
             [JsonProperty("contact")] private Contact _contact;
 
 
-            public int Id
+            public static int Id
             {
                 get { return _id; }
             }

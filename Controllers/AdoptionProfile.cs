@@ -21,8 +21,8 @@ namespace Keyboard_Cats.Controllers
         [Route("/adoptionprofile/")]
         public IActionResult Details(int id)
         {
-            Cat catObj = context.Cats.Where(c => catObj)
-            Cat catList = catObj.AnimalsList.Find(Cat, catObj.id)
+            //Cat catObj = context.Cats.Where(c => catObj)
+            //Cat catList = catObj.AnimalsList.Find(Cat, catObj.id)
 
             //AdoptionProfile profile = context.Cats.animalsList
             //    .Find(cat => cat.Id == id)
@@ -31,7 +31,7 @@ namespace Keyboard_Cats.Controllers
             
 
 
-                return View(profile);
+                return View();
         }
         /*
         

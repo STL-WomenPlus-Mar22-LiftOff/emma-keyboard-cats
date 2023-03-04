@@ -8,7 +8,7 @@ using System.Net.Http.Headers;
 
 namespace Keyboard_Cats.Controllers
 {
-    public class APIController : ControllerBase  
+    public class APIController : ControllerBase
 
     {
         private Keyboard_CatsContext context;
@@ -72,16 +72,16 @@ namespace Keyboard_Cats.Controllers
             }
 
             Cat cats = JsonConvert.DeserializeObject<Cat>(catInfo);
-            
+
             //save cats to database
-            
+
             return (IActionResult)cats;
         }
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-            // not returning a view.... iactionresult?
-        }
+        // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        //public IActionResult Error()
+        //{
+        //return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        // not returning a view.... iactionresult?
+
     }
 }

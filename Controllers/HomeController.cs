@@ -15,8 +15,6 @@ namespace Keyboard_Cats.Controllers
 {
     public class HomeController : Controller
     {
-        
-
         public IActionResult Index()
         {
             return View();
@@ -28,28 +26,28 @@ namespace Keyboard_Cats.Controllers
         }
 
         [Route("/AboutUs")]
-        public IActionResult AboutUs()
+        protected IActionResult AboutUs()
         {
             return View();
         }
 
         [Route("/Guest")]
-        public IActionResult Guest()
+        protected IActionResult Guest()
         {
             return View();
         }
         [Route("/CatVideoGenerator")]
-        public IActionResult CatVideoGenerator()
+        protected IActionResult CatVideoGenerator()
         {
             return View();
         }
 
         [Route("/CatGallery")]
-        public IActionResult CatGallery()
+        protected IActionResult CatGallery()
         {
             return View();
         }
-        }
     }
+}
 
 

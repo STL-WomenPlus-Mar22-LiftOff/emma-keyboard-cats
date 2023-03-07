@@ -74,7 +74,9 @@ namespace Keyboard_Cats.Controllers
             Cat cats = JsonConvert.DeserializeObject<Cat>(catInfo);
 
             //save cats to database
-
+            var db = new Keyboard_CatsContext();
+            db.Cats.AddRange(cats);
+            db.SaveChanges();
             return (IActionResult)cats;
         }
         // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

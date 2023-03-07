@@ -4,6 +4,8 @@ using Keyboard_Cats.Data;
 using Keyboard_Cats.Areas.Identity.Data;
 using Keyboard_Cats.Models;
 using System.Net.Http.Headers;
+using Microsoft.OpenApi.Models;
+
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("Keyboard_CatsContextConnection") ?? throw new InvalidOperationException("Connection string 'Keyboard_CatsContextConnection' not found.");
@@ -24,8 +26,26 @@ builder.Services.AddDefaultIdentity<Keyboard_CatsUser>(options => options.SignIn
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddHttpClient();
-
-var app = builder.Build();
+builder.Services.AddSwaggerGen(options =>
+{
+    options.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "ToDo API",
+        Description = "An ASP.NET Core Web API for managing ToDo items",
+        TermsOfService = new Uri("https://example.com/terms"),
+        Contact = new OpenApiContact
+        {
+            Name = "Example Contact",
+            Url = new Uri("https://example.com/contact")
+        },
+        License = new OpenApiLicense
+        {
+            Name = "Example License",
+            Url = new Uri("https://example.com/license")
+        }
+    });
+}); var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -51,7 +71,8 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapRazorPages();
-
+app.UseSwagger();
+app.UseSwaggerUI();
 app.Run();
 
 

@@ -24,10 +24,10 @@ namespace Keyboard_Cats.Controllers
             //Cat catObj = context.Cats.Where(c => catObj)
             //Cat catList = catObj.AnimalsList.Find(Cat, catObj.id)
 
-            //AdoptionProfile profile = context.Cats.animalsList
-            //    .Find(cat => cat.Id == id)
+            //AdoptionProfile profile = context.Cats
+                //.Find(cat => cat.Id == id)
                 
-            //    .FirstOrDefault();
+               //.FirstOrDefault();
             
 
 

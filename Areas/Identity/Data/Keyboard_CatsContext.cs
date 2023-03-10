@@ -4,12 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using Keyboard_Cats.Models;
 
-
 namespace Keyboard_Cats.Data;
 
 public class Keyboard_CatsContext : IdentityDbContext<Keyboard_CatsUser>
 {
-    public DbSet<Cat>? Cats { get; set; }
+    public DbSet<Cat.Animals>? Cats { get; set; }
     
     public Keyboard_CatsContext(DbContextOptions<Keyboard_CatsContext> options)
         : base(options)
@@ -24,8 +23,9 @@ public class Keyboard_CatsContext : IdentityDbContext<Keyboard_CatsUser>
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-        builder.Entity<Cat>()
-            
-            .HasKey(c => Cat.Animals.Id);
+        //Cat cat = new Cat();
+        builder.Entity<Cat.Animals>() 
+            .HasKey(cat => cat.Id);
+        
     }
 }

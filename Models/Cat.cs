@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -16,6 +17,7 @@ namespace Keyboard_Cats.Models
         public List<Animals> AnimalsList
         {
             get { return _animalsList; }
+            set { _animalsList = value; }
         }
 
 
@@ -28,10 +30,11 @@ namespace Keyboard_Cats.Models
             [JsonProperty("photos")] private List<Photos> _photosList;
             [JsonProperty("contact")] private Contact _contact;
 
-
+            [Key]
             public int Id
             {
                 get { return _id; }
+                set { _id = value; }
             }
 
             public string? Name

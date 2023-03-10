@@ -19,11 +19,9 @@ public class Keyboard_CatsContext : IdentityDbContext<Keyboard_CatsUser>
     {
     }
 
-
     protected override void OnModelCreating(ModelBuilder builder)
     {
         base.OnModelCreating(builder);
-        //Cat cat = new Cat();
         builder.Entity<Cat.Animals>() 
             .HasKey(cat => cat.Id);
         

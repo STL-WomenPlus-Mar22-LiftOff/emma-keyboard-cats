@@ -21,21 +21,15 @@ namespace Keyboard_Cats.Controllers
         [Route("/adoptionprofile/")]
         public IActionResult Details(int id)
         {
-            //Cat catObj = context.Cats.Where(c => catObj)
-            //Cat catList = catObj.AnimalsList.Find(Cat, catObj.id)
-
-            //AdoptionProfile profile = context.Cats
-                //.Find(cat => cat.Id == id)
+            AdoptionProfile adoptionProfile = new AdoptionProfile();
+            if (ModelState.IsValid)
+            {
                 
-               //.FirstOrDefault();
-            
-
+            }
 
                 return View();
         }
         /*
-        
-
         //method for saving favorited cats to user database
 
         public IActionResult AddFavorite()

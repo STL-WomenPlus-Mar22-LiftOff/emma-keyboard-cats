@@ -7,15 +7,15 @@ namespace Keyboard_Cats.Models
     {
         public int Id { get; set; }
 
-
+        public Cat Cat { get; set; }
 
         public AdoptionProfile()
         {
         }
-        public AdoptionProfile(int id)
+        public AdoptionProfile(int id, Cat cat)
         {
             Id = id;
-
+            Cat = cat;
         }
     }
 }

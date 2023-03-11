@@ -11,41 +11,36 @@ namespace Keyboard_Cats.Models
     [System.Serializable]
     public class Cat
     {
+        [JsonProperty("animals")] 
+        private List<CatEntity> animals;
 
-        [JsonProperty("animals")] private List<Animals> _animalsList;
-
-        public List<Animals> AnimalsList
+        public List<CatEntity> Animals
         {
-            get { return _animalsList; }
-            set { _animalsList = value; }
+            get { return animals; }
+            set { animals = value; }
         }
 
 
         [System.Serializable]
-        public class Animals
+        public class CatEntity
         {
-            [JsonProperty("id")] private int _id;
-            [JsonProperty("name")] private string _name;
-            [JsonProperty("description")] private string _description;
-            [JsonProperty("photos")] private List<Photos> _photosList;
-            [JsonProperty("contact")] private Contact _contact;
-
             [Key]
-            public int Id
-            {
-                get { return _id; }
-                set { _id = value; }
-            }
+            [JsonProperty("id")] 
+            public int Id { get; set; }
+            
+            [JsonProperty("name")] 
+            public string Name { get; set; }
+            
+            [JsonProperty("description")] 
+            public string Description { get; set; }
+            
+            [JsonProperty("photos")] 
+            public List<CatEntityPhotos> Photos { get; set; }    
+            
+            [JsonProperty("contact")] 
+            public CatEntityContact Contact { get; set; }
 
-            public string? Name
-            {
-                get { return _name; }
-            }
-
-            public string? Description
-            {
-                get { return _description; }
-            }
+            
 
             [System.Serializable]
             public class Attributes
@@ -86,13 +81,13 @@ namespace Keyboard_Cats.Models
                     get { return _cats; }   
                 }
             }
-            public List<Photos>? PhotosList
-            {
-                get { return _photosList; }
-            }
+            //public List<Photos>? PhotosList
+            //{
+                //get { return _photosList; }
+            //}
 
             [System.Serializable]
-            public class Photos
+            public class CatEntityPhotos
             {
                 [JsonProperty("small")] private string _small;
                 [JsonProperty("medium")] private string _medium;
@@ -120,7 +115,7 @@ namespace Keyboard_Cats.Models
                 }
             }
             [System.Serializable]
-            public class Contact
+            public class CatEntityContact
             {
                 [JsonProperty("email")] public string _email;
                 [JsonProperty("phone")] public string _phone;

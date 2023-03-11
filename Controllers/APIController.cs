@@ -75,7 +75,8 @@ namespace Keyboard_Cats.Controllers
 
             //save cats to database
             var db = new Keyboard_CatsContext();
-            db.Cats.AddRange(cats);
+            List<Cat.CatEntity> catEntities = cats.Animals;
+            db.Cats.AddRange(catEntities);
             db.SaveChanges();
             return (IActionResult)cats;
         }

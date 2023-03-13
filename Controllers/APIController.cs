@@ -72,13 +72,14 @@ namespace Keyboard_Cats.Controllers
             }
 
             Cat cats = JsonConvert.DeserializeObject<Cat>(catInfo);
-
-            //save cats to database
-            var db = new Keyboard_CatsContext();
             List<Cat.CatEntity> catEntities = cats.Animals;
-            db.Cats.AddRange(catEntities);
-            db.SaveChanges();
-            return (IActionResult)cats;
+            //save cats to database
+            using (var db = new Keyboard_CatsContext())
+            {
+                db.Cats.AddRange(catEntities);
+                db.SaveChanges();
+            }
+            return Ok(cats);
         }
         // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         //public IActionResult Error()

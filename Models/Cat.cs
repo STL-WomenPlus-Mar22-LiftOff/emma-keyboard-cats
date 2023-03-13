@@ -8,7 +8,7 @@ using System.Web;
 namespace Keyboard_Cats.Models
 {
 
-    [System.Serializable]
+    [Serializable]
     public class Cat
     {
         [JsonProperty("animals")] 
@@ -21,7 +21,7 @@ namespace Keyboard_Cats.Models
         }
 
 
-        [System.Serializable]
+        [Serializable]
         public class CatEntity
         {
             [Key]
@@ -40,149 +40,71 @@ namespace Keyboard_Cats.Models
             [JsonProperty("contact")] 
             public CatEntityContact Contact { get; set; }
 
-            
 
-            [System.Serializable]
+            [Serializable]
             public class Attributes
             {
-                [JsonProperty("spayed_neutered")] public bool _spayed_neutered;
-                [JsonProperty("shots_current")] public bool _shots_current;
+                [JsonProperty("spayed_neutered")]
+                public bool Spayed_neutered { get; set; }
 
-                public bool Spayed_neutered
-                {
-                    get { return _spayed_neutered; }
-                }
-
-                public bool Shots_current
-                {
-                    get { return _shots_current; }
-                }
+                [JsonProperty("shots_current")]
+                public bool Shots_current { get; set; }
+                
             }
 
-            [System.Serializable]
+            [Serializable]
             public class Environment
             {
-                [JsonProperty("children")] public bool? _children;
-                [JsonProperty("dogs")] public bool? _dogs;
-                [JsonProperty("cats")] public bool? _cats;
+                [JsonProperty("children")]
+                public bool? Children { get; set; }
 
-                public bool? Children
-                {
-                    get { return _children; }
-                }
+                [JsonProperty("dogs")]
+                public bool? Dogs { get; set; }
 
-                public bool? Dogs
-                {
-                    get { return _dogs; }
-                }
-
-                public bool? Cats
-                {
-                    get { return _cats; }   
-                }
+                [JsonProperty("cats")]
+                public bool? Cats { get; set; }
+                
             }
             //public List<Photos>? PhotosList
             //{
                 //get { return _photosList; }
             //}
 
-            [System.Serializable]
+            [Serializable]
             public class CatEntityPhotos
             {
-                [JsonProperty("small")] private string _small;
-                [JsonProperty("medium")] private string _medium;
-                [JsonProperty("large")] private string _large;
-                [JsonProperty("full")] private string _full;
+                [Key]
+                public int PhotosId { get; set; }
 
-                public string Small
-                {
-                    get { return _small; }
-                }
+                [JsonProperty("small")]
+                public string Small { get; set; }   
 
-                public string Medium
-                {
-                    get { return _medium; }
-                }
+                [JsonProperty("medium")]
+                public string Medium { get; set; }  
 
-                public string Large
-                {
-                    get { return _large; }
-                }
+                [JsonProperty("large")]
+                public string Large { get; set; }
 
-                public string Full
-                {
-                    get { return _full; }
-                }
+                [JsonProperty("full")] 
+                public string Full { get; set; }
             }
-            [System.Serializable]
+
+
+            [Serializable]
             public class CatEntityContact
             {
-                [JsonProperty("email")] public string _email;
-                [JsonProperty("phone")] public string _phone;
-                [JsonProperty("address1")] public string _address1;
+                [Key] 
+                public int ContactId { get; set; }
 
-                public string Email
-                {
-                    get { return _email; }
-                }
+                [JsonProperty("email")]
+                public string Email { get; set; }   
 
-                public string Phone
-                {
-                    get { return _phone; }  
-                }
+                [JsonProperty("phone")]
+                public string Phone { get; set; }
 
-                public string Address1
-                {
-                    get { return _address1; }
-                }
+                [JsonProperty("address1")] 
+                public string Address1 { get; set; }
             }
         }
     }
 }
-
-        /* [System.Serializable]
-         public class Breeds
-         {
-             [JsonProperty("primary")] public string primary { get; set; }
-             [JsonProperty("secondary")] public string secondary { get; set; }
-             [JsonProperty("mixed")] public bool mixed { get; set; }
-             [JsonProperty("unknown")] public bool unknown { get; set; }
-         }
-
-         [System.Serializable]
-         public class Colors
-         {
-             [JsonProperty("primary")] public string primary { get; set; }
-             [JsonProperty("secondary")] public string secondary { get; set; }
-             [JsonProperty("tertiary")] public object tertiary { get; set; }
-         }
-
-         [System.Serializable]
-         public class Primary_Photo_Cropped
-         {
-             [JsonProperty("small")] public string small;
-             [JsonProperty("medium")] public string medium;
-             [JsonProperty("large")] public string large;
-             [JsonProperty("full")] public string full;
-
-             public string Small
-             {
-                 get { return small; }
-
-             }
-
-             public string Medium
-             {
-                 get { return medium; }
-             }
-
-             public string Large
-             {
-                 get { return large; }
-             }
-
-             public string Full
-             {
-                 get { return full; }
-             }
-         }*/

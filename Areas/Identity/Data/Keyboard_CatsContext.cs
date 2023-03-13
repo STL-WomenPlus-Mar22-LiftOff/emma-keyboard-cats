@@ -24,6 +24,9 @@ public class Keyboard_CatsContext : IdentityDbContext<Keyboard_CatsUser>
         base.OnModelCreating(builder);
         builder.Entity<Cat.CatEntity>() 
             .HasKey(cat => cat.Id);
-        
+        builder.Entity<Cat.CatEntity.CatEntityPhotos>()
+            .HasKey(c => c.PhotosId);
+        builder.Entity<Cat.CatEntity.CatEntityContact>()
+            .HasKey(c => c.ContactId);
     }
 }

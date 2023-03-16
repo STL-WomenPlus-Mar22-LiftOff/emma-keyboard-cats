@@ -9,7 +9,8 @@ namespace Keyboard_Cats.Data;
 public class Keyboard_CatsContext : IdentityDbContext<Keyboard_CatsUser>
 {
     public DbSet<Cat.CatEntity>? Cats { get; set; }
-    
+    public DbSet<AdoptionProfile> AdoptionProfiles { get; set; }
+
     public Keyboard_CatsContext(DbContextOptions<Keyboard_CatsContext> options)
         : base(options)
     {

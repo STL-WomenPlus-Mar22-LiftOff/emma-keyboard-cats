@@ -79,7 +79,7 @@ namespace Keyboard_Cats.Controllers
                 db.Cats.AddRange(catEntities);
                 db.SaveChanges();
             }
-            return View(cats);
+            return Ok(cats);
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

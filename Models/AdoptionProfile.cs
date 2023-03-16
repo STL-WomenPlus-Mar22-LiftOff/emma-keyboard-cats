@@ -6,9 +6,7 @@ namespace Keyboard_Cats.Models
     public class AdoptionProfile
     {
         public int Id { get; set; }
-
         public Cat.CatEntity Cat { get; set; }
-
 
         public AdoptionProfile()
         {

@@ -16,17 +16,25 @@ namespace Keyboard_Cats.Controllers
             context = dbContext;
         }
 
-        //display information for each cat profile
+        //display profile for each cat
         [HttpGet]
-        [Route("/adoptionprofile/")]
+        [Route("/adoptionprofile/{id}")]
         public IActionResult Index(int id)
         {
-            AdoptionProfile adoptionProfile = context.Cats.FirstOrDefault(c => c.Id == id);
-            if (adoptionProfile == null)
+            Cat cat = (Cat)context.Cats.Where(c => c.Id == id);
+            if (cat == null)
             {
                 return NotFound();
             }
-                return View(adoptionProfile);
+
+            AdoptionProfile adoptionProfile = new AdoptionProfile()
+            {
+                Id = Cat.Id
+            };
+            
+
+            return View(adoptionProfile);
+        }
         }
         /*
         //method for saving favorited cats to user database

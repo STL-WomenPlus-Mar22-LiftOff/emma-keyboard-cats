@@ -1,15 +1,6 @@
-﻿using Keyboard_Cats.Models;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using NuGet.Protocol;
-using System.Collections.Generic;
-using System.Collections.Immutable;
-using System.Diagnostics;
-using System.Net.Http.Headers;
-using System.Runtime.Serialization.Json;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
+
 
 namespace Keyboard_Cats.Controllers
 {
@@ -26,24 +17,24 @@ namespace Keyboard_Cats.Controllers
         }
 
         [Route("/AboutUs")]
-        protected IActionResult AboutUs()
+        public IActionResult AboutUs()
         {
             return View();
         }
 
         [Route("/Guest")]
-        protected IActionResult Guest()
+        public IActionResult Guest()
         {
             return View();
         }
         [Route("/CatVideoGenerator")]
-        protected IActionResult CatVideoGenerator()
+        public IActionResult CatVideoGenerator()
         {
             return View();
         }
 
         [Route("/CatGallery")]
-        protected IActionResult CatGallery()
+        public IActionResult CatGallery()
         {
             return View();
         }

@@ -19,15 +19,14 @@ namespace Keyboard_Cats.Controllers
         //display information for each cat profile
         [HttpGet]
         [Route("/adoptionprofile/")]
-        public IActionResult Details(int id)
+        public IActionResult Index(int id)
         {
-            AdoptionProfile adoptionProfile = new AdoptionProfile();
-            if (ModelState.IsValid)
+            AdoptionProfile adoptionProfile = context.Cats.FirstOrDefault(c => c.Id == id);
+            if (adoptionProfile == null)
             {
-                
+                return NotFound();
             }
-
-                return View();
+                return View(adoptionProfile);
         }
         /*
         //method for saving favorited cats to user database

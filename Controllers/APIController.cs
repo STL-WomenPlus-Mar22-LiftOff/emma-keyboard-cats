@@ -1,6 +1,5 @@
 ﻿using Keyboard_Cats.Data;
 using Keyboard_Cats.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Diagnostics;
@@ -72,20 +71,25 @@ namespace Keyboard_Cats.Controllers
             }
 
             Cat cats = JsonConvert.DeserializeObject<Cat>(catInfo);
+
             List<Cat.CatEntity> catEntities = cats.Animals;
-            //save cats to database
+            //save cats to database and use in the view
             using (var db = new Keyboard_CatsContext())
             {
                 db.Cats.AddRange(catEntities);
                 db.SaveChanges();
             }
-            return Ok(cats);
+            return View(cats);
         }
-        // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        //public IActionResult Error()
-        //{
-        //return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        // not returning a view.... iactionresult?
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return IAsyncResult(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
 
+        private IActionResult IAsyncResult(ErrorViewModel errorViewModel)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

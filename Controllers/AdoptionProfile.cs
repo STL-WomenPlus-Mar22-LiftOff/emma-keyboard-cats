@@ -29,7 +29,7 @@ namespace Keyboard_Cats.Controllers
 
             AdoptionProfile adoptionProfile = new AdoptionProfile()
             {
-                Id = Cat.Id
+                Id = cat.Id
             };
             
 

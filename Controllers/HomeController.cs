@@ -45,6 +45,17 @@ namespace Keyboard_Cats.Controllers
         public IActionResult CatGallery()
         {
             List<Cat.CatEntity> cats = context.Cats.ToList();
+            List<string> images = new List<string>();
+            foreach (var cat in cats)
+            {
+                if (cat.Photos.Count > 0)
+                {
+                    images.Add(cat.Photos[0].Medium.ToString());
+                }
+            }
+            
+            ViewBag.CatImageLink = images;
+            //ViewBag.Cats = cats;
             return View(cats);
         }
     }

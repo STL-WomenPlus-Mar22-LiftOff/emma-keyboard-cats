@@ -1,5 +1,7 @@
 ﻿@model List<Cat.CatEntity>; 
 
+@*
+ 
 <link rel="stylesheet" type="text/css" href="~/css/Gallery.css"/>
 <header>
 <!--jQuery-->
@@ -24,7 +26,7 @@
     <script src="js/jquery.popup.lightbox.js"></script>
 
    
-        @*navigation bar to nav thorugh the forms*@
+      
         <div class="container">
 
             <img src="~/images/keyboard cat!.gif" alt="logo" class="logo" />
@@ -46,9 +48,73 @@
     <body>
 
         <h1> Cat Adoption Gallery</h1>
-    @*TODO: display cats*@
-    
-</body>
+        <table>
+
+    @foreach(var cat in ViewBag.Cats)
+    {
+        <tr>
+            <td>
+                @cat.Photos
+            </td>
+        </tr>
+    }
+        </table>
+</body>*@
 
 
+<link rel="stylesheet" type="text/css" href="~/css/Gallery.css"/>
+<header>
+
+    @*<h1>KeyBoard Cats</h1>*@
+
+    @*navigation bar to nav thorugh the forms*@
+       <div class="container">
+
+        <img src="~/images/keyboard cat!.gif" alt="logo" class="logo" height="100" width="150" />
+
+
+        <nav>
+            <ul>
+                <li><a href="/Identity/Account/Login">Login</a></li>
+                <li><a href="/Identity/Account/Register">Register</a></li>
+                <li><a href="/CatGallery">Cat Gallery</a></li> 
+                <li><a href="/">Home</a></li> 
+                <li><a href="/Guest">Resources</a></li>
+                <li><a href="/CatVideoGenerator">Cat Video Generator</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <body>
+
+        <h1> Cat Adoption Gallery</h1>
+
+        <div class="slider-frame">
+            <div class="slide-images">
+            @*To loop through the images provided and display them. Do not do array [], it will not loop the right way. *@
+
+            @foreach (string img in @ViewBag.CatImageLink)
+            {
+
+               <div class="img-container">
+                    <img src="@img" />
+                   </div>
+
+
+            }
+        </div>
+    </div>
+    <div class="gallery-container">
+        @foreach (string img in @ViewBag.CatImageLink)
+        {
+
+            <div class="image-container">
+                <center> <img src="@img" /></center>
+            </div>
+
+
+        }
+    </div>
+        </body>
 

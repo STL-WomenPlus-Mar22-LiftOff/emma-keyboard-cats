@@ -73,7 +73,7 @@ namespace Keyboard_Cats.Controllers
             Cat cats = JsonConvert.DeserializeObject<Cat>(catInfo);
 
             List<Cat.CatEntity> catEntities = cats.Animals;
-            //save cats to database and use in the view
+            //TODO: save cats to database and use in the view
             using (var db = new Keyboard_CatsContext())
             {
                 db.Cats.AddRange(catEntities);

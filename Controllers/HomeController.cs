@@ -1,11 +1,19 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Http;
-
+using Keyboard_Cats.Data;
+using System;
+using Keyboard_Cats.Models;
 
 namespace Keyboard_Cats.Controllers
 {
     public class HomeController : Controller
     {
+        private Keyboard_CatsContext context;
+        public HomeController(Keyboard_CatsContext dbContext)
+        {
+            context = dbContext;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -36,7 +44,8 @@ namespace Keyboard_Cats.Controllers
         [Route("/CatGallery")]
         public IActionResult CatGallery()
         {
-            return View();
+            List<Cat.CatEntity> cats = context.Cats.ToList();
+            return View(cats);
         }
     }
 }

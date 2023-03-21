@@ -21,7 +21,8 @@ namespace Keyboard_Cats.Controllers
         [Route("/adoptionprofile/{id}")]
         public IActionResult Index(int id)
         {
-            Cat cat = (Cat)context.Cats.Where(c => c.Id == id);
+            //Cat cat = (Cat)context.Cats.Where(c => c.Id == id);
+            Cat.CatEntity cat = context.Cats.FirstOrDefault(c => c.Id == id);
             if (cat == null)
             {
                 return NotFound();
@@ -34,7 +35,7 @@ namespace Keyboard_Cats.Controllers
             
 
             return View(adoptionProfile);
-        }
+        
         }
         /*
         //method for saving favorited cats to user database

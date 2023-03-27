@@ -72,11 +72,11 @@ namespace Keyboard_Cats.Controllers
 
             Cat cats = JsonConvert.DeserializeObject<Cat>(catInfo);
 
-            List<Cat.CatEntity> catEntities = cats.Animals;
+            
             //TODO: save cats to database and use in the view
             using (var db = new Keyboard_CatsContext())
             {
-                db.Cats.AddRange(catEntities);
+                db.Cats.AddRange((IEnumerable<Cat.CatEntity>)cats);
                 db.SaveChanges();
             }
             return Ok(cats);
